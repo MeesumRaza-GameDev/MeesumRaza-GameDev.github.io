@@ -1,202 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meesum Raza Khan | Game Developer Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    <meta charset="UTF-8">
 
-    body {
-      background: #0d1117;
-      color: #ffffff;
-      min-height: 100vh;
-      padding: 40px 20px;
-    }
+    <!-- Responsive website ke liye required -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-    }
+    <title>Meesum Raza Khan | Game Developer</title>
 
-    .hero {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 12px;
-      color: #58a6ff;
-    }
-
-    .hero p {
-      color: #c9d1d9;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    .portfolio-card {
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
-      margin-bottom: 30px;
-    }
-
-    .video-box {
-      width: 100%;
-      background: #000000;
-    }
-
-    video {
-      width: 100%;
-      display: block;
-      max-height: 560px;
-      object-fit: cover;
-    }
-
-    .content {
-      padding: 28px;
-    }
-
-    .content h2 {
-      font-size: 30px;
-      margin-bottom: 14px;
-      color: #ffffff;
-    }
-
-    .content p {
-      color: #c9d1d9;
-      font-size: 17px;
-      line-height: 1.7;
-      margin-bottom: 24px;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .btn {
-      display: inline-block;
-      text-decoration: none;
-      background: #238636;
-      color: #ffffff;
-      padding: 13px 24px;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: 0.25s ease;
-    }
-
-    .btn:hover {
-      background: #2ea043;
-      transform: translateY(-2px);
-    }
-
-    .btn-secondary {
-      background: #21262d;
-      border: 1px solid #30363d;
-    }
-
-    .btn-secondary:hover {
-      background: #30363d;
-    }
-
-    .upload-note {
-      margin-top: 18px;
-      background: #0d1117;
-      border: 1px dashed #30363d;
-      border-radius: 12px;
-      padding: 16px;
-      color: #8b949e;
-      font-size: 15px;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 40px;
-      color: #8b949e;
-      font-size: 14px;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        padding: 25px 14px;
-      }
-
-      .hero h1 {
-        font-size: 30px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
-      .content {
-        padding: 20px;
-      }
-
-      .content h2 {
-        font-size: 24px;
-      }
-    }
-  </style>
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-    <section class="hero">
-      <h1>Meesum Raza Khan</h1>
-      <p>
-        Unity Game Developer specializing in hyper-casual and puzzle mobile games,
-        from gameplay prototyping to final launch.
-      </p>
-    </section>
 
-    <section class="portfolio-card">
-      <div class="video-box">
-        <!-- Apni game video videos/game-demo.mp4 ke naam se upload karein -->
-        <video controls poster="" id="gameVideo">
-          <source src="videos/game-demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <nav class="navbar">
 
-      <div class="content">
-        <h2>Game Title Here</h2>
-        <p>
-          Write your game description here. Example: This is a mobile hyper-casual game
-          developed in Unity with smooth controls, engaging gameplay, optimized performance,
-          and clean UI design for Android players.
-        </p>
-
-        <div class="buttons">
-          <a class="btn" href="https://play.google.com/store/apps/details?id=YOUR_GAME_ID" target="_blank">
-            Play / View Game
-          </a>
-          <a class="btn btn-secondary" href="https://github.com/YOUR_USERNAME" target="_blank">
-            GitHub Profile
-          </a>
+        <div class="logo">
+            MR
         </div>
 
-        <div class="upload-note">
-          <strong>Video upload guide:</strong> GitHub repository mein <b>videos</b> folder banao,
-          apni video upload karo, aur video ka naam <b>game-demo.mp4</b> rakho.
-          Phir ye video yahan automatically show ho jayegi.
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="connect-btn">
+            Let's Connect
+        </a>
+
+    </nav>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="intro">
+                Hi, I'm
+            </span>
+
+            <h1>Meesum Raza</h1>
+
+            <h2>Game Developer</h2>
+
+            <p>
+                Building engaging mobile games for Android,
+                iOS and Web platforms.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="primary-btn">
+                    View My Games
+                </a>
+
+                <a href="#" class="secondary-btn">
+                    Download Resume
+                </a>
+
+                <a href="#contact" class="secondary-btn">
+                    Let's Connect
+                </a>
+
+            </div>
+
         </div>
-      </div>
+
+        <div class="hero-image">
+            <img src="assets/images/hero.png" alt="Meesum Raza Game Developer Hero Image">
+        </div>
+
     </section>
 
+
+    <!-- =========================
+         PROJECTS SECTION
+    ========================== -->
+    <section class="projects-section" id="projects">
+
+        <div class="section-header">
+            <div>
+                <h3><span></span> Featured Projects</h3>
+                <p>A selection of my best work</p>
+            </div>
+
+            <a href="#" class="view-all">View All Projects →</a>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-placeholder">
+                    Project Image
+                </div>
+
+                <div class="project-info">
+                    <h4>Supermarket Simulator</h4>
+                    <span>Simulation</span>
+                    <p>Manage your own supermarket empire. Handle customers, stock and expand.</p>
+
+                    <div class="project-icons">
+                        <span>🤖</span>
+                        <span>🖥️</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-placeholder">
+                    Project Image
+                </div>
+
+                <div class="project-info">
+                    <h4>Brainrot Vault</h4>
+                    <span>Casual</span>
+                    <p>Fun collectible game with unique characters and brainrot challenges.</p>
+
+                    <div class="project-icons">
+                        <span>🤖</span>
+                        <span>🖥️</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-placeholder">
+                    Project Image
+                </div>
+
+                <div class="project-info">
+                    <h4>Needoh Tower</h4>
+                    <span>Arcade</span>
+                    <p>Climb the tower, overcome obstacles and reach the top.</p>
+
+                    <div class="project-icons">
+                        <span>🤖</span>
+                        <span>🖥️</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card upcoming-card">
+                <div class="gamepad-icon">🎮</div>
+
+                <div class="project-info">
+                    <h4>Upcoming Project</h4>
+                    <span>In Development</span>
+                    <p>An exciting new adventure is on the way. Stay tuned!</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         EXPERIENCE + SKILLS
+    ========================== -->
+    <section class="info-section">
+
+        <div class="experience-box" id="experience">
+
+            <div class="section-header small">
+                <div>
+                    <h3><span></span> Experience</h3>
+                    <p>My professional journey</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+                        <div>
+                            <h4>Game Developer</h4>
+                            <span>Self Employed</span>
+                        </div>
+
+                        <small>2022 - Present</small>
+
+                        <p>
+                            Designing, developing and publishing mobile games.
+                            Working on full game cycle from concept to release.
+                            Expertise in Unity, C# and mobile game optimization.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+                        <div>
+                            <h4>Junior Game Developer</h4>
+                            <span>Fiverr / Freelance Projects</span>
+                        </div>
+
+                        <small>2021 - 2022</small>
+
+                        <p>
+                            Completed multiple game projects for clients worldwide.
+                            Focused on gameplay mechanics, UI/UX and performance optimization.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="skills-box" id="skills">
+
+            <div class="section-header small">
+                <div>
+                    <h3><span></span> Skills</h3>
+                    <p>Technologies I work with</p>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-top">
+                    <span>Unity</span>
+                    <b>95%</b>
+                </div>
+                <div class="skill-bar"><div style="width:95%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-top">
+                    <span>C#</span>
+                    <b>90%</b>
+                </div>
+                <div class="skill-bar"><div style="width:90%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-top">
+                    <span>Game Design</span>
+                    <b>85%</b>
+                </div>
+                <div class="skill-bar"><div style="width:85%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-top">
+                    <span>UI/UX Design</span>
+                    <b>80%</b>
+                </div>
+                <div class="skill-bar"><div style="width:80%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-top">
+                    <span>Firebase</span>
+                    <b>75%</b>
+                </div>
+                <div class="skill-bar"><div style="width:75%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-top">
+                    <span>Blender</span>
+                    <b>70%</b>
+                </div>
+                <div class="skill-bar"><div style="width:70%"></div></div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CTA SECTION
+    ========================== -->
+    <section class="cta-section" id="contact">
+
+        <div>
+            <h3>Let's Work Together</h3>
+            <p>I'm available for freelance projects and full-time opportunities.</p>
+        </div>
+
+        <a href="mailto:yourmail@example.com" class="primary-btn">
+            Let's Connect →
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
     <footer class="footer">
-      © 2026 Meesum Raza Khan. All Rights Reserved.
+
+        <div class="footer-about">
+            <div class="footer-logo">MR</div>
+
+            <h4>Meesum Raza</h4>
+            <span>Game Developer</span>
+
+            <p>
+                Passionate about creating fun and engaging games that players love.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-links">
+            <h4>Connect</h4>
+
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">YouTube</a>
+            <a href="mailto:yourmail@example.com">Email</a>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Let's Connect</h4>
+
+            <p>
+                Available for new opportunities and exciting projects.
+            </p>
+
+            <a href="#" class="primary-btn">
+                Download Resume ↓
+            </a>
+        </div>
+
     </footer>
-  </div>
+
+
+    <div class="copyright">
+        © 2026 Meesum Raza. All rights reserved.
+    </div>
+
+
+    <!-- JS file -->
+    <script src="script.js"></script>
+
 </body>
 </html>
