@@ -611,6 +611,89 @@ div.hero-image{
 
 
 /* =========================
+   FEATURED PROJECT - IMAGE CARD
+========================= */
+
+.project-card-link{
+    display:block;
+    color:inherit;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.project-card-link:focus-visible{
+    outline:2px solid var(--purple);
+    outline-offset:4px;
+}
+
+.project-media{
+    width:100%;
+    height:125px;
+    position:relative;
+    overflow:hidden;
+    background:#11172A;
+}
+
+.project-media::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        180deg,
+        rgba(4,7,15,0) 35%,
+        rgba(4,7,15,.78) 100%
+    );
+    opacity:0;
+    transition:.25s ease;
+    pointer-events:none;
+}
+
+.project-media .project-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:transform .35s ease, filter .35s ease;
+}
+
+.project-view{
+    position:absolute;
+    left:12px;
+    bottom:10px;
+    z-index:2;
+
+    padding:6px 9px;
+    border-radius:7px;
+
+    color:#fff;
+    background:rgba(8,11,24,.78);
+    border:1px solid rgba(255,255,255,.14);
+    backdrop-filter:blur(8px);
+
+    font-size:10px;
+    font-weight:800;
+
+    opacity:0;
+    transform:translateY(6px);
+    transition:.25s ease;
+}
+
+.project-card-link:hover .project-media::after{
+    opacity:1;
+}
+
+.project-card-link:hover .project-media .project-img{
+    transform:scale(1.05);
+    filter:saturate(1.08);
+}
+
+.project-card-link:hover .project-view{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+/* =========================
    EXPERIENCE + SKILLS
 ========================= */
 
