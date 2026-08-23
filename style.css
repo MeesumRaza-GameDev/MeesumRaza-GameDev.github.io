@@ -3,10 +3,8 @@
 ========================= */
 
 :root{
-
     --bg:#070B16;
     --bg-dark:#02040B;
-
     --panel:#0D1324;
     --panel-light:#11182D;
 
@@ -21,9 +19,7 @@
     --linkedin-light:#317DE6;
 
     --border:rgba(255,255,255,.08);
-
 }
-
 
 
 /* =========================
@@ -31,26 +27,19 @@
 ========================= */
 
 *{
-
     margin:0;
     padding:0;
-
     box-sizing:border-box;
-
 }
 
 
 html{
-
     scroll-behavior:smooth;
-
 }
 
 
 body{
-
     background:#02040B;
-
     color:var(--text);
 
     font-family:
@@ -59,14 +48,11 @@ body{
         sans-serif;
 
     overflow-x:hidden;
-
 }
 
 
 a{
-
     color:inherit;
-
 }
 
 
@@ -76,9 +62,7 @@ a{
 ========================= */
 
 .navbar{
-
     width:calc(100% - 32px);
-
     max-width:1280px;
 
     margin:14px auto 0;
@@ -86,15 +70,12 @@ a{
     padding:18px 52px;
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
     gap:28px;
 
     position:relative;
-
     z-index:20;
 
     background:
@@ -105,14 +86,12 @@ a{
         );
 
     border:1px solid rgba(255,255,255,.06);
-
     border-bottom:0;
 
     border-radius:22px 22px 0 0;
 
     box-shadow:
         0 22px 80px rgba(0,0,0,.35);
-
 }
 
 
@@ -122,9 +101,7 @@ a{
 ========================= */
 
 .brand{
-
     display:flex;
-
     align-items:center;
 
     gap:10px;
@@ -132,12 +109,10 @@ a{
     text-decoration:none;
 
     min-width:210px;
-
 }
 
 
 .brand-icon{
-
     width:42px;
     height:42px;
 
@@ -151,44 +126,32 @@ a{
 
     box-shadow:
         0 0 22px rgba(124,92,255,.45);
-
 }
 
 
 .brand-text{
-
     display:flex;
-
     flex-direction:column;
 
     line-height:1.05;
-
 }
 
 
 .brand-text strong{
-
     font-size:15px;
-
     font-weight:900;
-
     color:#ffffff;
-
     letter-spacing:.1px;
-
 }
 
 
 .brand-text span{
-
     margin-top:4px;
 
     font-size:11px;
-
     font-weight:600;
 
     color:#AEB5CA;
-
 }
 
 
@@ -198,33 +161,25 @@ a{
 ========================= */
 
 .nav-links{
-
     display:flex;
-
     align-items:center;
 
     list-style:none;
 
     gap:38px;
-
 }
 
 
 .nav-links li{
-
     position:relative;
-
 }
 
 
 .nav-links a{
-
     position:relative;
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
     color:rgba(230,235,250,.92);
@@ -232,7 +187,6 @@ a{
     text-decoration:none;
 
     font-size:13px;
-
     font-weight:800;
 
     padding:18px 0;
@@ -244,22 +198,18 @@ a{
     border:none;
 
     box-shadow:none;
-
 }
 
 
 .nav-links a::before{
-
     content:'';
 
     position:absolute;
 
     top:-19px;
-
     left:50%;
 
     width:72px;
-
     height:3px;
 
     transform:
@@ -284,43 +234,34 @@ a{
     opacity:0;
 
     transition:.25s ease;
-
 }
 
 
 .nav-links a:hover{
-
     color:var(--purple);
-
 }
 
 
 .nav-links a:hover::before{
-
     opacity:1;
 
     transform:
         translateX(-50%)
         scaleX(1);
-
 }
 
 
 .nav-links a.active{
-
     color:var(--purple);
-
 }
 
 
 .nav-links a.active::before{
-
     opacity:1;
 
     transform:
         translateX(-50%)
         scaleX(1);
-
 }
 
 
@@ -331,7 +272,6 @@ a{
 
 .connect-btn,
 .primary-btn{
-
     text-decoration:none;
 
     background:
@@ -348,13 +288,11 @@ a{
     border-radius:9px;
 
     font-size:13px;
-
     font-weight:800;
 
     display:inline-flex;
 
     align-items:center;
-
     justify-content:center;
 
     gap:8px;
@@ -367,30 +305,24 @@ a{
     transition:.25s ease;
 
     white-space:nowrap;
-
 }
 
 
 .connect-btn{
-
     padding:13px 24px;
-
 }
 
 
 .connect-btn:hover,
 .primary-btn:hover{
-
     transform:translateY(-3px);
 
     box-shadow:
         0 26px 65px rgba(124,92,255,.35);
-
 }
 
 
 .secondary-btn{
-
     border:1px solid rgba(255,255,255,.18);
 
     color:var(--text);
@@ -402,7 +334,6 @@ a{
     border-radius:9px;
 
     font-size:13px;
-
     font-weight:800;
 
     background:rgba(255,255,255,.025);
@@ -410,24 +341,20 @@ a{
     display:inline-flex;
 
     align-items:center;
-
     justify-content:center;
 
     transition:.22s ease;
 
     white-space:nowrap;
-
 }
 
 
 .secondary-btn:hover{
-
     border-color:rgba(124,92,255,.75);
 
     background:rgba(124,92,255,.08);
 
     transform:translateY(-3px);
-
 }
 
 
@@ -437,9 +364,7 @@ a{
 ========================= */
 
 .hero{
-
     width:calc(100% - 32px);
-
     max-width:1280px;
 
     min-height:410px;
@@ -452,13 +377,11 @@ a{
 
     overflow:hidden;
 
-    border-left:1px solid rgba(255,255,255,.06);
+    border-left:
+        1px solid rgba(255,255,255,.06);
 
-    border-right:1px solid rgba(255,255,255,.06);
-
-    border-top:0;
-
-    border-bottom:0;
+    border-right:
+        1px solid rgba(255,255,255,.06);
 
     background:
 
@@ -480,12 +403,10 @@ a{
             #090D1B 42%,
             #070B16 100%
         );
-
 }
 
 
 .hero::before{
-
     content:'';
 
     position:absolute;
@@ -500,18 +421,21 @@ a{
 
         linear-gradient(
             90deg,
+
             rgba(7,11,22,1) 0%,
+
             rgba(7,11,22,.95) 30%,
+
             rgba(7,11,22,.72) 48%,
+
             rgba(7,11,22,.22) 72%,
+
             rgba(7,11,22,.10) 100%
         );
-
 }
 
 
 .hero::after{
-
     content:'';
 
     position:absolute;
@@ -532,34 +456,28 @@ a{
             rgba(7,11,22,0),
             rgba(7,11,22,.96)
         );
-
 }
 
 
 .hero-content{
-
     max-width:530px;
 
     position:relative;
 
     z-index:5;
-
 }
 
 
 .intro{
-
     color:#d9def5;
 
     font-size:15px;
 
     font-weight:500;
-
 }
 
 
 .hero h1{
-
     font-size:46px;
 
     line-height:1;
@@ -571,12 +489,10 @@ a{
     color:var(--purple);
 
     letter-spacing:-1.4px;
-
 }
 
 
 .hero h2{
-
     font-size:34px;
 
     line-height:1.05;
@@ -588,12 +504,10 @@ a{
     font-weight:950;
 
     letter-spacing:-.8px;
-
 }
 
 
 .hero p{
-
     margin-top:18px;
 
     max-width:390px;
@@ -603,12 +517,10 @@ a{
     color:#cfd6e6;
 
     line-height:1.55;
-
 }
 
 
 .hero-buttons{
-
     display:flex;
 
     gap:12px;
@@ -616,19 +528,15 @@ a{
     margin-top:24px;
 
     flex-wrap:nowrap;
-
 }
 
 
 .hero-buttons a{
-
     white-space:nowrap;
-
 }
 
 
 .hero-image{
-
     position:absolute;
 
     right:0;
@@ -637,7 +545,6 @@ a{
     bottom:0;
 
     width:68%;
-
     height:100%;
 
     object-fit:cover;
@@ -667,7 +574,6 @@ a{
             black 24%,
             black 100%
         );
-
 }
 
 
@@ -703,27 +609,25 @@ a{
             rgba(5,8,18,.98)
         );
 
-    border-left:1px solid rgba(255,255,255,.06);
+    border-left:
+        1px solid rgba(255,255,255,.06);
 
-    border-right:1px solid rgba(255,255,255,.06);
-
+    border-right:
+        1px solid rgba(255,255,255,.06);
 }
 
 
 
 /* =========================
-   PROJECTS
+   PROJECTS SECTION
 ========================= */
 
 .projects-section{
-
     padding:24px 52px 0;
-
 }
 
 
 .section-header{
-
     display:flex;
 
     justify-content:space-between;
@@ -731,23 +635,19 @@ a{
     align-items:flex-end;
 
     margin-bottom:18px;
-
 }
 
 
 .section-header h3{
-
     font-size:22px;
 
     line-height:1.2;
 
     font-weight:900;
-
 }
 
 
 .section-header h3 span{
-
     display:inline-block;
 
     width:7px;
@@ -761,22 +661,22 @@ a{
 
     box-shadow:
         0 0 18px rgba(124,92,255,.8);
-
 }
 
 
 .section-header p{
-
     margin-top:4px;
 
     color:#9FA6BD;
 
     font-size:13px;
-
 }
 
 
-/* VIEW ALL */
+
+/* =========================
+   VIEW ALL
+========================= */
 
 .view-all{
 
@@ -806,19 +706,14 @@ a{
             rgba(95,124,255,.06)
         );
 
-    border:1px solid rgba(124,92,255,.38);
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.06),
-        0 8px 24px rgba(0,0,0,.18);
+    border:
+        1px solid rgba(124,92,255,.38);
 
     transition:.22s ease;
-
 }
 
 
 .view-all:hover{
-
     color:#ffffff;
 
     transform:translateY(-2px);
@@ -831,23 +726,20 @@ a{
             rgba(124,92,255,.24),
             rgba(95,124,255,.14)
         );
-
 }
 
 
 .view-all span{
-
     font-size:15px;
 
-    transition:.2s ease;
+    line-height:1;
 
+    transition:.2s ease;
 }
 
 
 .view-all:hover span{
-
     transform:translateX(3px);
-
 }
 
 
@@ -861,19 +753,24 @@ a{
     display:grid;
 
     grid-template-columns:
-        repeat(4,minmax(0,1fr));
+        repeat(4, minmax(0, 1fr));
 
     gap:18px;
-
 }
 
+
+
+/* =========================
+   PROJECT CARD
+========================= */
 
 .project-card{
 
     background:
         rgba(15,21,39,.88);
 
-    border:1px solid var(--border);
+    border:
+        1px solid var(--border);
 
     border-radius:10px;
 
@@ -885,7 +782,6 @@ a{
         0 16px 45px rgba(0,0,0,.18);
 
     min-width:0;
-
 }
 
 
@@ -898,7 +794,6 @@ a{
 
     box-shadow:
         0 24px 60px rgba(0,0,0,.35);
-
 }
 
 
@@ -911,7 +806,6 @@ a{
     text-decoration:none;
 
     cursor:pointer;
-
 }
 
 
@@ -921,9 +815,13 @@ a{
         2px solid var(--purple);
 
     outline-offset:4px;
-
 }
 
+
+
+/* =========================
+   PROJECT MEDIA
+========================= */
 
 .project-media{
 
@@ -936,7 +834,6 @@ a{
     overflow:hidden;
 
     background:#11172A;
-
 }
 
 
@@ -960,7 +857,6 @@ a{
     transition:.25s ease;
 
     pointer-events:none;
-
 }
 
 
@@ -977,7 +873,6 @@ a{
     transition:
         transform .35s ease,
         filter .35s ease;
-
 }
 
 
@@ -1014,48 +909,43 @@ a{
     transform:translateY(6px);
 
     transition:.25s ease;
-
 }
 
 
 .project-card-link:hover
 .project-media::after{
-
     opacity:1;
-
 }
 
 
 .project-card-link:hover
 .project-media
 .project-img{
-
     transform:scale(1.05);
 
     filter:saturate(1.08);
-
 }
 
 
 .project-card-link:hover
 .project-view{
-
     opacity:1;
 
     transform:translateY(0);
-
 }
 
 
+
+/* =========================
+   PROJECT INFO
+========================= */
+
 .project-info{
-
     padding:14px;
-
 }
 
 
 .project-info h4{
-
     font-size:14px;
 
     margin-bottom:5px;
@@ -1063,23 +953,19 @@ a{
     font-weight:900;
 
     line-height:1.3;
-
 }
 
 
 .project-info span{
-
     color:#9D87FF;
 
     font-size:11px;
 
     font-weight:700;
-
 }
 
 
 .project-info p{
-
     color:var(--muted);
 
     font-size:11px;
@@ -1089,12 +975,10 @@ a{
     margin-top:11px;
 
     min-height:48px;
-
 }
 
 
 .project-icons{
-
     display:flex;
 
     gap:10px;
@@ -1104,14 +988,13 @@ a{
     opacity:.85;
 
     font-size:13px;
-
 }
 
 
 
-/* =====================================================
+/* =========================================================
    EXPERIENCE + SKILLS
-===================================================== */
+========================================================= */
 
 .info-section{
 
@@ -1123,28 +1006,24 @@ a{
     gap:38px;
 
     padding:34px 52px 0;
+}
 
+
+.section-header.small{
+    margin-bottom:16px;
 }
 
 
 
 /* =========================
-   EXPERIENCE
+   TIMELINE
 ========================= */
-
-.section-header.small{
-
-    margin-bottom:16px;
-
-}
-
 
 .timeline{
 
     position:relative;
 
     padding-left:25px;
-
 }
 
 
@@ -1168,7 +1047,6 @@ a{
             var(--purple),
             rgba(124,92,255,.15)
         );
-
 }
 
 
@@ -1177,14 +1055,11 @@ a{
     position:relative;
 
     margin-bottom:22px;
-
 }
 
 
 .timeline-item:last-child{
-
     margin-bottom:0;
-
 }
 
 
@@ -1194,7 +1069,7 @@ a{
 
     left:-25px;
 
-    top:14px;
+    top:18px;
 
     width:13px;
     height:13px;
@@ -1206,6 +1081,7 @@ a{
     box-shadow:
         0 0 18px rgba(124,92,255,.9);
 
+    z-index:2;
 }
 
 
@@ -1217,32 +1093,37 @@ a{
 .timeline-content{
 
     background:
-        rgba(15,21,39,.82);
+        linear-gradient(
+            145deg,
+            rgba(17,24,45,.92),
+            rgba(12,18,35,.88)
+        );
 
-    border:1px solid var(--border);
+    border:
+        1px solid rgba(255,255,255,.08);
 
-    border-radius:10px;
+    border-radius:12px;
 
-    padding:17px;
+    padding:18px;
 
     position:relative;
 
     transition:
-        border-color .22s ease,
-        transform .22s ease,
-        box-shadow .22s ease;
-
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
 }
 
 
 .timeline-content:hover{
 
+    transform:translateY(-3px);
+
     border-color:
-        rgba(124,92,255,.32);
+        rgba(124,92,255,.38);
 
     box-shadow:
-        0 14px 35px rgba(0,0,0,.20);
-
+        0 18px 45px rgba(0,0,0,.25);
 }
 
 
@@ -1251,109 +1132,33 @@ a{
    EXPERIENCE HEADING
 ========================= */
 
-.experience-heading{
+.timeline-heading{
 
     display:flex;
 
-    align-items:center;
+    justify-content:space-between;
 
-    flex-wrap:wrap;
+    align-items:flex-start;
 
-    gap:7px;
+    gap:20px;
 
-    padding-right:125px;
-
+    padding-right:0;
 }
 
 
-.experience-heading h4{
+.timeline-heading h4{
 
     font-size:15px;
 
     font-weight:900;
 
-    line-height:1.3;
-
+    line-height:1.25;
 }
 
 
-.experience-company{
+.timeline-heading small{
 
-    display:inline;
-
-    margin-top:0 !important;
-
-    color:#9D87FF !important;
-
-    font-size:13px !important;
-
-    font-weight:800 !important;
-
-}
-
-
-.experience-company a{
-
-    color:#B49FFF;
-
-    text-decoration:none;
-
-    position:relative;
-
-    transition:.2s ease;
-
-}
-
-
-.experience-company a::after{
-
-    content:'';
-
-    position:absolute;
-
-    left:0;
-
-    right:0;
-
-    bottom:-2px;
-
-    height:1px;
-
-    background:currentColor;
-
-    opacity:.45;
-
-    transition:.2s ease;
-
-}
-
-
-.experience-company a:hover{
-
-    color:#ffffff;
-
-}
-
-
-.experience-company a:hover::after{
-
-    opacity:1;
-
-}
-
-
-
-/* =========================
-   EXPERIENCE DATE
-========================= */
-
-.timeline-content > small{
-
-    position:absolute;
-
-    right:17px;
-
-    top:18px;
+    flex-shrink:0;
 
     color:#B9BFD1;
 
@@ -1363,6 +1168,82 @@ a{
 
     white-space:nowrap;
 
+    padding-top:2px;
+}
+
+
+
+/* =========================
+   COMPANY BUTTON
+========================= */
+
+.company-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    width:max-content;
+
+    margin-top:7px;
+
+    padding:5px 9px;
+
+    border-radius:6px;
+
+    color:#C8BEFF;
+
+    background:
+        rgba(124,92,255,.09);
+
+    border:
+        1px solid rgba(124,92,255,.28);
+
+    text-decoration:none;
+
+    font-size:10px;
+
+    font-weight:800;
+
+    line-height:1;
+
+    transition:
+        color .2s ease,
+        background .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+}
+
+
+.company-link span{
+
+    color:#9D87FF;
+
+    font-size:11px;
+
+    transition:
+        transform .2s ease;
+}
+
+
+.company-link:hover{
+
+    color:#ffffff;
+
+    background:
+        rgba(124,92,255,.18);
+
+    border-color:
+        rgba(124,92,255,.62);
+
+    transform:translateY(-1px);
+}
+
+
+.company-link:hover span{
+    transform:translate(2px,-2px);
 }
 
 
@@ -1371,161 +1252,157 @@ a{
    EXPERIENCE DESCRIPTION
 ========================= */
 
-.timeline-content p{
+.timeline-content > p{
 
     color:var(--muted);
 
     line-height:1.55;
 
-    margin-top:12px;
+    margin-top:14px;
 
     font-size:11px;
 
-    max-width:100%;
-
+    max-width:96%;
 }
 
 
 
 /* =========================
-   CASH CLEANER PROJECT LINK
+   PROJECT BUTTON INSIDE
+   EXPERIENCE
 ========================= */
 
-.experience-project-link{
+.project-experience-link{
 
     display:inline-flex;
 
     align-items:center;
 
-    padding:3px 7px;
+    gap:4px;
 
     margin:0 2px;
 
+    padding:2px 6px;
+
     border-radius:5px;
 
-    color:#E6E0FF !important;
+    color:#DCD8FF;
 
     background:
-        rgba(124,92,255,.14);
+        rgba(124,92,255,.12);
 
     border:
-        1px solid rgba(124,92,255,.38);
+        1px solid rgba(124,92,255,.32);
 
     text-decoration:none;
 
-    font-size:10px !important;
+    font-size:10px;
 
-    font-weight:800 !important;
+    font-weight:850;
 
-    line-height:1.2;
+    line-height:1.3;
 
-    transition:
-        background .2s ease,
-        border-color .2s ease,
-        color .2s ease,
-        transform .2s ease;
+    white-space:nowrap;
 
+    transition:.2s ease;
 }
 
 
-.experience-project-link:hover{
+.project-experience-link span{
 
-    color:#ffffff !important;
+    color:#9D87FF;
+
+    font-size:10px;
+
+    transition:.2s ease;
+}
+
+
+.project-experience-link:hover{
+
+    color:#ffffff;
 
     background:
-        rgba(124,92,255,.27);
+        rgba(124,92,255,.22);
 
     border-color:
-        rgba(124,92,255,.72);
+        rgba(124,92,255,.68);
 
-    transform:translateY(-1px);
+    box-shadow:
+        0 5px 18px rgba(124,92,255,.15);
+}
 
+
+.project-experience-link:hover span{
+
+    transform:translate(2px,-2px);
 }
 
 
 
 /* =========================
-   EXPERIENCE SKILL TABS
+   EXPERIENCE TAGS
 ========================= */
 
-.experience-skills{
+.experience-tags{
 
     display:flex;
-
-    align-items:center;
 
     flex-wrap:wrap;
 
     gap:6px;
 
     margin-top:14px;
-
 }
 
 
-.experience-skills span{
+.experience-tags span{
 
     display:inline-flex;
 
     align-items:center;
 
-    justify-content:center;
-
-    min-height:23px;
-
-    padding:4px 8px;
+    padding:5px 8px;
 
     border-radius:6px;
 
-    color:#CFC8FF;
+    color:#AEB5CA;
 
     background:
-        rgba(124,92,255,.08);
+        rgba(255,255,255,.035);
 
     border:
-        1px solid rgba(124,92,255,.24);
+        1px solid rgba(255,255,255,.07);
 
     font-size:9px;
 
+    font-weight:700;
+
     line-height:1;
 
-    font-weight:800;
-
-    letter-spacing:.1px;
-
-    transition:
-        background .2s ease,
-        border-color .2s ease,
-        color .2s ease,
-        transform .2s ease;
-
+    transition:.2s ease;
 }
 
 
-.experience-skills span:hover{
+.experience-tags span:hover{
 
-    color:#ffffff;
-
-    background:
-        rgba(124,92,255,.18);
+    color:#DCD8FF;
 
     border-color:
-        rgba(124,92,255,.50);
+        rgba(124,92,255,.28);
 
-    transform:translateY(-1px);
-
+    background:
+        rgba(124,92,255,.07);
 }
 
 
 
-/* =====================================================
+/* =========================
    SKILLS
-===================================================== */
+========================= */
 
 .skill{
-
     margin-bottom:15px;
-
 }
 
 
@@ -1542,7 +1419,6 @@ a{
     font-size:13px;
 
     font-weight:800;
-
 }
 
 
@@ -1551,7 +1427,6 @@ a{
     font-size:11px;
 
     color:#D8DBEC;
-
 }
 
 
@@ -1567,7 +1442,6 @@ a{
     border-radius:20px;
 
     overflow:hidden;
-
 }
 
 
@@ -1586,13 +1460,12 @@ a{
 
     box-shadow:
         0 0 20px rgba(124,92,255,.45);
-
 }
 
 
 
 /* =========================
-   CTA
+   CTA SECTION
 ========================= */
 
 .cta-section{
@@ -1608,7 +1481,6 @@ a{
     gap:28px;
 
     position:relative;
-
 }
 
 
@@ -1658,7 +1530,6 @@ a{
         0 28px 70px rgba(0,0,0,.30);
 
     z-index:1;
-
 }
 
 
@@ -1669,7 +1540,6 @@ a{
     z-index:2;
 
     padding:38px 52px;
-
 }
 
 
@@ -1683,6 +1553,7 @@ a{
 
     letter-spacing:-.6px;
 
+    color:#ffffff;
 }
 
 
@@ -1695,7 +1566,6 @@ a{
     font-size:15px;
 
     line-height:1.55;
-
 }
 
 
@@ -1712,7 +1582,6 @@ a{
     justify-content:flex-end;
 
     margin-right:52px;
-
 }
 
 
@@ -1770,7 +1639,6 @@ a{
     cursor:pointer;
 
     white-space:nowrap;
-
 }
 
 
@@ -1785,34 +1653,42 @@ a{
         0 28px 65px rgba(124,92,255,.34),
 
         inset 0 1px 0 rgba(255,255,255,.26);
-
 }
 
 
 .linkedin-app-icon{
 
     width:42px;
+
     height:42px;
 
     display:inline-flex;
 
     align-items:center;
+
     justify-content:center;
 
     border-radius:10px;
 
     background:#0A66C2;
 
+    box-shadow:
+
+        inset 0 1px 0 rgba(255,255,255,.18),
+
+        0 8px 20px rgba(0,0,0,.22);
 }
 
 
 .linkedin-app-icon svg{
 
     width:30px;
+
     height:30px;
 
     fill:#ffffff;
 
+    display:block;
 }
 
 
@@ -1823,7 +1699,6 @@ a{
     line-height:1;
 
     margin-left:2px;
-
 }
 
 
@@ -1842,13 +1717,13 @@ a{
         1.4fr .8fr .8fr 1.1fr;
 
     gap:38px;
-
 }
 
 
 .footer-logo{
 
     width:34px;
+
     height:34px;
 
     border-radius:10px;
@@ -1861,7 +1736,6 @@ a{
 
     box-shadow:
         0 0 18px rgba(124,92,255,.35);
-
 }
 
 
@@ -1872,7 +1746,6 @@ a{
     margin-bottom:8px;
 
     font-weight:900;
-
 }
 
 
@@ -1884,7 +1757,6 @@ a{
     font-size:11px;
 
     line-height:1.5;
-
 }
 
 
@@ -1893,7 +1765,6 @@ a{
     max-width:230px;
 
     margin-top:13px;
-
 }
 
 
@@ -1904,7 +1775,6 @@ a{
     flex-direction:column;
 
     gap:7px;
-
 }
 
 
@@ -1917,14 +1787,12 @@ a{
     font-size:11px;
 
     transition:.2s ease;
-
 }
 
 
 .footer-links a:hover{
 
     color:var(--purple);
-
 }
 
 
@@ -1937,7 +1805,6 @@ a{
     padding:11px 16px;
 
     font-size:11px;
-
 }
 
 
@@ -1964,14 +1831,13 @@ a{
         0 0 22px 22px;
 
     margin-bottom:18px;
-
 }
 
 
 
-/* =====================================================
+/* =========================
    RESPONSIVE
-===================================================== */
+========================= */
 
 @media(max-width:1100px){
 
@@ -1984,7 +1850,6 @@ a{
     .copyright{
 
         width:calc(100% - 24px);
-
     }
 
 
@@ -1992,7 +1857,6 @@ a{
 
         padding-left:34px;
         padding-right:34px;
-
     }
 
 
@@ -2000,7 +1864,6 @@ a{
 
         padding-left:34px;
         padding-right:34px;
-
     }
 
 
@@ -2010,43 +1873,37 @@ a{
 
         padding-left:34px;
         padding-right:34px;
-
     }
 
 
     .nav-links{
 
         gap:24px;
-
     }
 
 
     .hero h1{
 
         font-size:42px;
-
     }
 
 
     .hero h2{
 
         font-size:31px;
-
     }
 
 
     .projects-grid{
 
         grid-template-columns:
-            repeat(2,minmax(0,1fr));
-
+            repeat(2, minmax(0,1fr));
     }
 
 
     .info-section{
 
         grid-template-columns:1fr;
-
     }
 
 
@@ -2054,7 +1911,6 @@ a{
 
         grid-template-columns:
             repeat(2,1fr);
-
     }
 
 
@@ -2062,7 +1918,6 @@ a{
 
         padding-left:34px;
         padding-right:34px;
-
     }
 
 
@@ -2070,7 +1925,6 @@ a{
 
         left:34px;
         right:34px;
-
     }
 
 
@@ -2078,23 +1932,46 @@ a{
 
         padding-left:34px;
         padding-right:28px;
-
     }
 
 
     .cta-actions{
 
         margin-right:34px;
+    }
 
+
+    .linkedin-connect-btn{
+
+        height:56px;
+
+        padding:
+            0 26px 0 12px;
+
+        font-size:15px;
+
+        border-radius:14px;
+    }
+
+
+    .linkedin-app-icon{
+
+        width:38px;
+        height:38px;
+
+        border-radius:9px;
+    }
+
+
+    .linkedin-app-icon svg{
+
+        width:27px;
+        height:27px;
     }
 
 }
 
 
-
-/* =========================
-   TABLET
-========================= */
 
 @media(max-width:900px){
 
@@ -2103,14 +1980,12 @@ a{
         margin-top:10px;
 
         padding:16px 20px;
-
     }
 
 
     .nav-links{
 
         display:none;
-
     }
 
 
@@ -2120,28 +1995,36 @@ a{
 
         padding:
             95px 28px 55px;
+    }
 
+
+    .hero::before{
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(7,11,22,.99) 0%,
+                rgba(7,11,22,.92) 58%,
+                rgba(7,11,22,.62) 100%
+            );
     }
 
 
     .hero-content{
 
         max-width:100%;
-
     }
 
 
     .hero h1{
 
         font-size:46px;
-
     }
 
 
     .hero h2{
 
         font-size:34px;
-
     }
 
 
@@ -2150,14 +2033,12 @@ a{
         font-size:15px;
 
         max-width:520px;
-
     }
 
 
     .hero-buttons{
 
         flex-wrap:wrap;
-
     }
 
 
@@ -2168,7 +2049,6 @@ a{
         right:-35%;
 
         width:125%;
-
     }
 
 
@@ -2178,7 +2058,6 @@ a{
 
         padding-left:28px;
         padding-right:28px;
-
     }
 
 
@@ -2186,14 +2065,12 @@ a{
 
         padding-left:28px;
         padding-right:28px;
-
     }
 
 
     .cta-section{
 
         padding:42px 28px 0;
-
     }
 
 
@@ -2203,58 +2080,48 @@ a{
         right:28px;
 
         top:42px;
-
     }
 
 
     .cta-content{
 
         padding:30px 28px;
-
     }
 
 
     .cta-actions{
 
         margin-right:28px;
-
     }
 
 
-    /*
-       Experience cards need a little more
-       vertical room on tablet sizes.
-    */
+    .timeline-heading{
 
-    .experience-heading{
-
-        padding-right:0;
-
-        max-width:70%;
-
+        gap:15px;
     }
 
 
-    .timeline-content > small{
+    .linkedin-connect-btn{
 
-        right:17px;
+        height:54px;
 
+        padding:
+            0 24px 0 10px;
+
+        font-size:14px;
+
+        border-radius:14px;
     }
 
 }
 
 
 
-/* =========================
-   MOBILE
-========================= */
-
 @media(max-width:600px){
 
     .projects-grid{
 
         grid-template-columns:1fr;
-
     }
 
 
@@ -2265,80 +2132,48 @@ a{
         flex-direction:column;
 
         gap:10px;
-
     }
 
 
     .footer{
 
         grid-template-columns:1fr;
-
     }
 
 
-    .timeline-content{
+    .timeline-heading{
 
-        padding:15px;
+        flex-direction:column;
 
+        gap:7px;
     }
 
 
-    .experience-heading{
+    .timeline-heading small{
 
-        display:block;
+        white-space:normal;
 
-        padding-right:0;
-
+        padding-top:0;
     }
 
 
-    .experience-heading h4{
-
-        display:inline;
-
-    }
-
-
-    .experience-company{
-
-        display:inline !important;
-
-        margin-left:4px;
-
-    }
-
-
-    .timeline-content > small{
-
-        position:static;
-
-        display:block;
-
-        margin-top:8px;
-
-    }
-
-
-    .timeline-content p{
+    .timeline-content > p{
 
         max-width:100%;
-
     }
 
 
-    .experience-skills{
+    .experience-tags{
 
         gap:5px;
-
     }
 
 
-    .experience-skills span{
+    .experience-tags span{
 
-        padding:4px 7px;
+        font-size:8px;
 
-        font-size:8.5px;
-
+        padding:5px 7px;
     }
 
 
@@ -2351,14 +2186,12 @@ a{
         gap:0;
 
         padding-bottom:0;
-
     }
 
 
     .cta-section::after{
 
         bottom:0;
-
     }
 
 
@@ -2366,14 +2199,12 @@ a{
 
         padding:
             28px 28px 16px;
-
     }
 
 
     .cta-content h3{
 
         font-size:24px;
-
     }
 
 
@@ -2385,7 +2216,6 @@ a{
 
         padding:
             0 28px 28px;
-
     }
 
 
@@ -2405,7 +2235,6 @@ a{
         border-radius:14px;
 
         gap:12px;
-
     }
 
 
@@ -2415,7 +2244,6 @@ a{
         height:38px;
 
         border-radius:9px;
-
     }
 
 
@@ -2423,23 +2251,17 @@ a{
 
         width:27px;
         height:27px;
-
     }
 
 }
 
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
-
 @media(max-width:480px){
 
     .connect-btn{
 
         display:none;
-
     }
 
 
@@ -2452,14 +2274,12 @@ a{
     .copyright{
 
         width:calc(100% - 16px);
-
     }
 
 
     .navbar{
 
         padding:14px 16px;
-
     }
 
 
@@ -2468,7 +2288,6 @@ a{
         min-width:auto;
 
         gap:9px;
-
     }
 
 
@@ -2480,21 +2299,18 @@ a{
         flex-basis:36px;
 
         border-radius:10px;
-
     }
 
 
     .brand-text strong{
 
         font-size:13px;
-
     }
 
 
     .brand-text span{
 
         font-size:10px;
-
     }
 
 
@@ -2502,14 +2318,12 @@ a{
 
         padding:
             88px 20px 48px;
-
     }
 
 
     .intro{
 
         font-size:14px;
-
     }
 
 
@@ -2518,14 +2332,12 @@ a{
         font-size:38px;
 
         letter-spacing:-1px;
-
     }
 
 
     .hero h2{
 
         font-size:29px;
-
     }
 
 
@@ -2534,7 +2346,6 @@ a{
         font-size:14px;
 
         line-height:1.55;
-
     }
 
 
@@ -2543,7 +2354,6 @@ a{
         width:100%;
 
         text-align:center;
-
     }
 
 
@@ -2554,7 +2364,6 @@ a{
         right:-75%;
 
         width:165%;
-
     }
 
 
@@ -2564,7 +2373,6 @@ a{
 
         padding-left:20px;
         padding-right:20px;
-
     }
 
 
@@ -2572,7 +2380,6 @@ a{
 
         padding-left:20px;
         padding-right:20px;
-
     }
 
 
@@ -2580,7 +2387,6 @@ a{
 
         left:20px;
         right:20px;
-
     }
 
 
@@ -2588,7 +2394,6 @@ a{
 
         padding-left:22px;
         padding-right:22px;
-
     }
 
 
@@ -2596,7 +2401,6 @@ a{
 
         padding-left:22px;
         padding-right:22px;
-
     }
 
 
@@ -2604,34 +2408,53 @@ a{
 
         padding-left:20px;
         padding-right:20px;
-
     }
 
 
-    /*
-       Mobile experience layout:
-       title + company remain together,
-       date moves naturally below.
-    */
+    .timeline{
 
-    .experience-heading h4{
+        padding-left:21px;
+    }
+
+
+    .timeline::before{
+
+        left:5px;
+    }
+
+
+    .timeline-dot{
+
+        left:-21px;
+
+        width:11px;
+        height:11px;
+    }
+
+
+    .timeline-content{
+
+        padding:15px;
+    }
+
+
+    .timeline-heading h4{
 
         font-size:14px;
-
     }
 
 
-    .experience-company{
-
-        font-size:12px !important;
-
-    }
-
-
-    .timeline-content > small{
+    .company-link{
 
         font-size:9px;
 
+        padding:5px 8px;
+    }
+
+
+    .project-experience-link{
+
+        white-space:normal;
     }
 
 }
