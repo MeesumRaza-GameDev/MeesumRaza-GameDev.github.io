@@ -14,6 +14,17 @@
         Haunted Pizza Delivery Game | Meesum Raza
     </title>
 
+
+    <!-- Main Portfolio CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../../style.css"
+    >
+
+
+    <!-- Project Page CSS -->
+
     <link
         rel="stylesheet"
         href="project.css"
@@ -25,28 +36,27 @@
 <body>
 
 
-    <!-- =========================
+    <!-- =====================================================
          NAVBAR
-    ========================== -->
+    ====================================================== -->
 
-    <nav class="project-navbar">
+    <nav class="navbar">
+
 
         <a
-            href="../../index.html"
-            class="back-btn"
+            href="../../index.html#home"
+            class="brand"
+            aria-label="Meesum Raza Home"
         >
-            ← Back to Projects
-        </a>
-
-
-        <div class="project-brand">
 
             <img
                 src="../../assets/images/portfolio-icon.png"
-                alt="Meesum Raza"
+                class="brand-icon"
+                alt="Meesum Raza Logo"
             >
 
-            <div>
+
+            <div class="brand-text">
 
                 <strong>
                     Meesum Raza
@@ -58,42 +68,121 @@
 
             </div>
 
-        </div>
+        </a>
+
+
+
+        <ul class="nav-links">
+
+
+            <li>
+
+                <a href="../../index.html#home">
+                    Home
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="../../index.html#about">
+                    About
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                    href="../../index.html#projects"
+                    class="active"
+                >
+                    Projects
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="../../index.html#experience">
+                    Experience
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="../../index.html#skills">
+                    Skills
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="../../index.html#contact">
+                    Contact
+                </a>
+
+            </li>
+
+
+        </ul>
+
 
 
         <a
-            href="https://play.google.com/store/apps/details?id=com.gs.horror.pizza.delivery.game&hl=en"
-            class="play-btn"
-            target="_blank"
-            rel="noopener"
+            href="../../index.html#contact"
+            class="connect-btn"
         >
-            ▶ Play on Google Play
+            Let's Connect
         </a>
+
 
     </nav>
 
 
 
-    <!-- =========================
-         MAIN PROJECT
-    ========================== -->
+    <!-- =====================================================
+         MAIN PROJECT PAGE
+    ====================================================== -->
 
-    <main>
+    <main class="project-page">
 
 
-        <!-- =========================
+
+        <!-- =================================================
              PROJECT HERO
-        ========================== -->
+        ================================================== -->
 
-        <section class="project-hero">
-
-
-            <div class="hero-content">
+        <section class="project-hero-detail">
 
 
-                <span class="project-category">
-                    Horror Game
+            <!-- BACK BUTTON -->
+
+            <a
+                href="../../index.html#projects"
+                class="back-project"
+            >
+                ← Back to Featured Projects
+            </a>
+
+
+
+            <!-- PROJECT INFORMATION -->
+
+            <div class="project-title-wrap">
+
+
+                <span class="project-kicker">
+                    Featured Project · Horror
                 </span>
+
 
 
                 <h1>
@@ -101,161 +190,105 @@
                 </h1>
 
 
-                <p>
-                    Step into a terrifying pizza delivery
-                    experience where every delivery can turn
-                    into a horrifying encounter. Explore creepy
-                    environments, complete deliveries and survive
-                    the unexpected.
+
+                <p class="project-lead">
+
+                    A horror-themed pizza delivery game where
+                    players take on dangerous delivery missions,
+                    explore creepy environments and encounter
+                    unexpected situations along the way.
+
                 </p>
 
 
-                <div class="hero-meta">
+
+                <!-- PROJECT TAGS -->
+
+                <div class="project-meta">
+
 
                     <span>
-                        🎮 Android
+                        Horror
                     </span>
 
-                    <span>
-                        👻 Horror
-                    </span>
 
                     <span>
-                        🍕 Delivery
+                        Android
                     </span>
+
+
+                    <span>
+                        Unity
+                    </span>
+
+
+                    <span>
+                        C#
+                    </span>
+
+
+                    <span>
+                        Delivery
+                    </span>
+
 
                 </div>
 
 
-                <div class="hero-buttons">
+
+                <!-- =================================================
+                     GOOGLE PLAY BUTTON
+                ================================================== -->
+
+                <a
+                    href="https://play.google.com/store/apps/details?id=com.gs.horror.pizza.delivery.game&hl=en"
+                    class="playstore-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Haunted Pizza Delivery Game on Google Play"
+                >
 
 
-                    <a
-                        href="https://play.google.com/store/apps/details?id=com.gs.horror.pizza.delivery.game&hl=en"
-                        class="primary-btn"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        ▶ Play on Google Play
-                    </a>
+                    <span class="playstore-icon">
+                        ▶
+                    </span>
 
 
-                    <a
-                        href="../../index.html#projects"
-                        class="secondary-btn"
-                    >
-                        ← Back to Games
-                    </a>
+                    <span class="playstore-button-text">
+
+                        <small>
+                            Available on
+                        </small>
+
+                        See Project on Play Store
+
+                    </span>
 
 
-                </div>
+                    <b>
+                        →
+                    </b>
+
+
+                </a>
 
 
             </div>
 
 
 
-            <!-- PROJECT COVER -->
+            <!-- =================================================
+                 PROJECT COVER
+            ================================================== -->
 
-            <div class="hero-cover">
+            <div class="project-cover-large">
+
 
                 <img
                     src="images/cover.png"
-                    alt="Haunted Pizza Delivery Game Cover"
+                    alt="Haunted Pizza Delivery Game"
                 >
 
-            </div>
-
-
-        </section>
-
-
-
-        <!-- =========================
-             ABOUT THE GAME
-        ========================== -->
-
-        <section class="project-section">
-
-
-            <div class="section-title">
-
-                <span></span>
-
-                <div>
-
-                    <h2>
-                        About The Game
-                    </h2>
-
-                    <p>
-                        Project overview
-                    </p>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="overview-grid">
-
-
-                <!-- CARD 1 -->
-
-                <div class="overview-card">
-
-                    <h3>
-                        Haunted Deliveries
-                    </h3>
-
-                    <p>
-                        Deliver pizzas to mysterious locations
-                        while exploring dark environments and
-                        dealing with unexpected events during
-                        your delivery missions.
-                    </p>
-
-                </div>
-
-
-
-                <!-- CARD 2 -->
-
-                <div class="overview-card">
-
-                    <h3>
-                        Horror Gameplay
-                    </h3>
-
-                    <p>
-                        Experience suspenseful gameplay with
-                        creepy environments, unexpected encounters
-                        and horror-inspired challenges designed
-                        to keep players on edge.
-                    </p>
-
-                </div>
-
-
-
-                <!-- CARD 3 -->
-
-                <div class="overview-card">
-
-                    <h3>
-                        Mobile Experience
-                    </h3>
-
-                    <p>
-                        Designed for Android devices with
-                        straightforward controls and gameplay
-                        optimized for an engaging mobile
-                        experience.
-                    </p>
-
-                </div>
-
 
             </div>
 
@@ -264,111 +297,148 @@
 
 
 
-        <!-- =========================
-             GAME GALLERY
-        ========================== -->
+        <!-- =====================================================
+             PROJECT GALLERY
+        ====================================================== -->
 
-        <section class="project-section screenshots-section">
+        <section class="project-gallery-section">
 
 
-            <div class="section-title">
+            <div class="project-section-heading">
 
-                <span></span>
 
                 <div>
 
+
                     <h2>
-                        Game Gallery
+
+                        <span></span>
+
+                        Project Images
+
                     </h2>
 
+
                     <p>
-                        A look inside the gameplay
+                        Gameplay and project visuals
                     </p>
 
+
                 </div>
+
 
             </div>
 
 
 
-            <div class="screenshots-grid">
+            <div class="project-gallery">
 
 
-                <!-- GALLERY 01 -->
+                <!-- =================================================
+                     GALLERY 01
+                ================================================== -->
 
-                <div class="screenshot-card">
+                <figure class="gallery-main">
+
 
                     <img
                         src="images/gallery-01.png"
                         alt="Haunted Pizza Delivery Game gameplay screenshot 1"
+                        loading="lazy"
                     >
 
-                </div>
+
+                </figure>
 
 
 
-                <!-- GALLERY 02 -->
+                <!-- =================================================
+                     GALLERY 02
+                ================================================== -->
 
-                <div class="screenshot-card">
+                <figure>
+
 
                     <img
                         src="images/gallery-02.png"
                         alt="Haunted Pizza Delivery Game gameplay screenshot 2"
+                        loading="lazy"
                     >
 
-                </div>
+
+                </figure>
 
 
 
-                <!-- GALLERY 03 -->
+                <!-- =================================================
+                     GALLERY 03
+                ================================================== -->
 
-                <div class="screenshot-card">
+                <figure>
+
 
                     <img
                         src="images/gallery-03.png"
                         alt="Haunted Pizza Delivery Game gameplay screenshot 3"
+                        loading="lazy"
                     >
 
-                </div>
+
+                </figure>
 
 
 
-                <!-- GALLERY 04 -->
+                <!-- =================================================
+                     GALLERY 04
+                ================================================== -->
 
-                <div class="screenshot-card">
+                <figure>
+
 
                     <img
                         src="images/gallery-04.png"
                         alt="Haunted Pizza Delivery Game gameplay screenshot 4"
+                        loading="lazy"
                     >
 
-                </div>
+
+                </figure>
 
 
 
-                <!-- GALLERY 05 -->
+                <!-- =================================================
+                     GALLERY 05
+                ================================================== -->
 
-                <div class="screenshot-card">
+                <figure>
+
 
                     <img
                         src="images/gallery-05.png"
                         alt="Haunted Pizza Delivery Game gameplay screenshot 5"
+                        loading="lazy"
                     >
 
-                </div>
+
+                </figure>
 
 
 
-                <!-- GALLERY 06 -->
+                <!-- =================================================
+                     GALLERY 06
+                ================================================== -->
 
-                <div class="screenshot-card">
+                <figure>
+
 
                     <img
                         src="images/gallery-06.png"
                         alt="Haunted Pizza Delivery Game gameplay screenshot 6"
+                        loading="lazy"
                     >
 
-                </div>
+
+                </figure>
 
 
             </div>
@@ -378,193 +448,253 @@
 
 
 
-        <!-- =========================
-             DEVELOPMENT
-        ========================== -->
+        <!-- =====================================================
+             DESCRIPTION + SIDE CARD
+        ====================================================== -->
 
-        <section class="project-section development-section">
-
-
-            <div class="section-title">
-
-                <span></span>
-
-                <div>
-
-                    <h2>
-                        Development
-                    </h2>
-
-                    <p>
-                        Technologies and platform
-                    </p>
-
-                </div>
-
-            </div>
+        <section class="project-description-section">
 
 
 
-            <div class="development-grid">
+            <!-- =================================================
+                 DESCRIPTION
+            ================================================== -->
+
+            <div class="project-description">
 
 
-                <!-- UNITY -->
+                <div class="project-section-heading">
 
-                <div class="development-card">
-
-                    <div class="development-icon">
-                        🎮
-                    </div>
 
                     <div>
 
-                        <h3>
-                            Unity
-                        </h3>
+
+                        <h2>
+
+                            <span></span>
+
+                            About the Project
+
+                        </h2>
+
 
                         <p>
-                            Game Engine
+                            Development overview
                         </p>
 
+
                     </div>
+
 
                 </div>
 
-
-
-                <!-- C# -->
-
-                <div class="development-card">
-
-                    <div class="development-icon">
-                        💻
-                    </div>
-
-                    <div>
-
-                        <h3>
-                            C#
-                        </h3>
-
-                        <p>
-                            Programming
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- ANDROID -->
-
-                <div class="development-card">
-
-                    <div class="development-icon">
-                        📱
-                    </div>
-
-                    <div>
-
-                        <h3>
-                            Android
-                        </h3>
-
-                        <p>
-                            Target Platform
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- GAME TYPE -->
-
-                <div class="development-card">
-
-                    <div class="development-icon">
-                        🍕
-                    </div>
-
-                    <div>
-
-                        <h3>
-                            Horror / Delivery
-                        </h3>
-
-                        <p>
-                            Game Category
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- =========================
-             GOOGLE PLAY CTA
-        ========================== -->
-
-        <section class="store-section">
-
-
-            <div>
-
-
-                <span class="store-label">
-                    AVAILABLE ON ANDROID
-                </span>
-
-
-                <h2>
-                    Ready for a Haunted Delivery?
-                </h2>
 
 
                 <p>
-                    Play Haunted Pizza Delivery Game on
-                    Google Play and experience the horror.
+
+                    Haunted Pizza Delivery Game is a
+                    Unity-based horror delivery experience
+                    developed for Android.
+
                 </p>
+
+
+
+                <p>
+
+                    The game combines pizza delivery gameplay
+                    with dark environments, suspenseful moments
+                    and unexpected horror encounters.
+
+                </p>
+
+
+
+                <p>
+
+                    The project focuses on creating an engaging
+                    mobile gameplay experience while combining
+                    delivery mechanics, exploration and horror
+                    elements.
+
+                </p>
+
+
+
+                <!-- =================================================
+                     DEVELOPMENT SKILLS
+                ================================================== -->
+
+                <div class="development-skills-card">
+
+
+                    <div class="skills-card-header">
+
+
+                        <div class="skills-card-dot"></div>
+
+
+
+                        <div>
+
+
+                            <h3>
+                                Development Skills
+                            </h3>
+
+
+                            <p>
+                                Technologies and systems used in this project
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="skills-tags">
+
+
+                        <span>
+                            Unity
+                        </span>
+
+
+                        <span>
+                            C#
+                        </span>
+
+
+                        <span>
+                            Gameplay Programming
+                        </span>
+
+
+                        <span>
+                            Horror Gameplay
+                        </span>
+
+
+                        <span>
+                            Delivery Systems
+                        </span>
+
+
+                        <span>
+                            Mobile Development
+                        </span>
+
+
+                        <span>
+                            UI/UX
+                        </span>
+
+
+                        <span>
+                            Android Development
+                        </span>
+
+
+                        <span>
+                            Gameplay Systems
+                        </span>
+
+
+                        <span>
+                            Game Optimization
+                        </span>
+
+
+                    </div>
+
+
+                </div>
 
 
             </div>
 
 
 
-            <a
-                href="https://play.google.com/store/apps/details?id=com.gs.horror.pizza.delivery.game&hl=en"
-                class="store-btn"
-                target="_blank"
-                rel="noopener"
-            >
+            <!-- =================================================
+                 PROJECT INFORMATION CARD
+            ================================================== -->
+
+            <aside class="project-side-card">
 
 
-                <span class="store-icon">
-                    ▶
+                <span class="side-label">
+                    Project Type
                 </span>
 
 
-                <span>
+                <strong>
+                    Horror / Delivery
+                </strong>
 
-                    <small>
-                        GET IT ON
-                    </small>
 
-                    Google Play
 
+                <span class="side-label">
+                    Engine
                 </span>
 
 
-            </a>
+                <strong>
+                    Unity
+                </strong>
+
+
+
+                <span class="side-label">
+                    Platform
+                </span>
+
+
+                <strong>
+                    Android
+                </strong>
+
+
+
+                <span class="side-label">
+                    Language
+                </span>
+
+
+                <strong>
+                    C#
+                </strong>
+
+
+
+                <span class="side-label">
+                    Status
+                </span>
+
+
+                <strong>
+                    Published
+                </strong>
+
+
+
+                <!-- GOOGLE PLAY -->
+
+                <a
+                    href="https://play.google.com/store/apps/details?id=com.gs.horror.pizza.delivery.game&hl=en"
+                    class="primary-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    See Project on Play Store →
+
+                </a>
+
+
+            </aside>
 
 
         </section>
@@ -574,42 +704,171 @@
 
 
 
-    <!-- =========================
+    <!-- =====================================================
          FOOTER
-    ========================== -->
+    ====================================================== -->
 
-    <footer class="project-footer">
+    <footer class="footer">
 
 
-        <div>
+        <!-- FOOTER ABOUT -->
 
-            <strong>
+        <div class="footer-about">
+
+
+            <img
+                src="../../assets/images/portfolio-icon.png"
+                class="footer-logo"
+                alt="Meesum Raza Logo"
+            >
+
+
+            <h4>
                 Meesum Raza
-            </strong>
+            </h4>
+
 
             <span>
                 Game Developer
             </span>
 
+
+            <p>
+                Passionate about creating fun and engaging
+                games that players love.
+            </p>
+
+
         </div>
 
 
 
-        <a href="../../index.html">
+        <!-- QUICK LINKS -->
 
-            ← Back to Portfolio
-
-        </a>
+        <div class="footer-links">
 
 
+            <h4>
+                Quick Links
+            </h4>
 
-        <p>
-            © 2026 Meesum Raza.
-            All rights reserved.
-        </p>
+
+            <a href="../../index.html#home">
+                Home
+            </a>
+
+
+            <a href="../../index.html#about">
+                About
+            </a>
+
+
+            <a href="../../index.html#projects">
+                Projects
+            </a>
+
+
+            <a href="../../index.html#experience">
+                Experience
+            </a>
+
+
+            <a href="../../index.html#skills">
+                Skills
+            </a>
+
+
+            <a href="../../index.html#contact">
+                Contact
+            </a>
+
+
+        </div>
+
+
+
+        <!-- CONNECT -->
+
+        <div class="footer-links">
+
+
+            <h4>
+                Connect
+            </h4>
+
+
+            <a
+                href="https://pk.linkedin.com/in/meesum-razakhan"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
+
+
+            <a
+                href="https://github.com/MeesumRaza-GameDev"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+
+
+            <a href="#">
+                YouTube
+            </a>
+
+
+            <a href="mailto:yourmail@example.com">
+                Email
+            </a>
+
+
+        </div>
+
+
+
+        <!-- FOOTER CONTACT -->
+
+        <div class="footer-contact">
+
+
+            <h4>
+                Let's Connect
+            </h4>
+
+
+            <p>
+                Available for new opportunities and exciting projects.
+            </p>
+
+
+            <a
+                href="../../assets/resume/Meesum-Raza-Resume.pdf"
+                class="primary-btn"
+                download
+            >
+                Download Resume ↓
+            </a>
+
+
+        </div>
 
 
     </footer>
+
+
+
+    <!-- =====================================================
+         COPYRIGHT
+    ====================================================== -->
+
+    <div class="copyright">
+
+        © 2026 Meesum Raza. All rights reserved.
+
+    </div>
 
 
 </body>
