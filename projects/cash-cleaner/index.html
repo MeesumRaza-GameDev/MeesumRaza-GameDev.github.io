@@ -15,7 +15,9 @@
     </title>
 
 
-    <!-- Main Portfolio CSS -->
+    <!-- =====================================================
+         MAIN PORTFOLIO CSS
+    ====================================================== -->
 
     <link
         rel="stylesheet"
@@ -23,7 +25,9 @@
     >
 
 
-    <!-- Project CSS -->
+    <!-- =====================================================
+         PROJECT CSS
+    ====================================================== -->
 
     <link
         rel="stylesheet"
@@ -144,18 +148,26 @@
         <section class="project-hero-detail">
 
 
-            <!-- Back -->
+            <!-- =================================================
+                 DYNAMIC BACK BUTTON
+
+                 JavaScript below changes this depending on
+                 where the user came from.
+            ================================================== -->
 
             <a
                 href="../index.html"
                 class="back-project"
+                id="projectBackButton"
             >
                 ← Back to All Projects
             </a>
 
 
 
-            <!-- Project Information -->
+            <!-- =================================================
+                 PROJECT INFORMATION
+            ================================================== -->
 
             <div class="project-title-wrap">
 
@@ -180,7 +192,7 @@
 
 
 
-                <!-- Project Tags -->
+                <!-- PROJECT TAGS -->
 
                 <div class="project-meta">
 
@@ -204,7 +216,9 @@
 
 
 
-                <!-- PLAY STORE -->
+                <!-- =================================================
+                     PLAY STORE
+                ================================================== -->
 
                 <a
                     href="https://play.google.com/store/apps/details?id=com.gs.money.washer.bills.simulator&hl=en"
@@ -240,7 +254,9 @@
 
 
 
-            <!-- COVER -->
+            <!-- =================================================
+                 COVER
+            ================================================== -->
 
             <div class="project-cover-large">
 
@@ -394,7 +410,9 @@
 
 
 
-                <!-- DEVELOPMENT SKILLS -->
+                <!-- =================================================
+                     DEVELOPMENT SKILLS
+                ================================================== -->
 
                 <div class="development-skills-card">
 
@@ -471,7 +489,9 @@
 
 
 
-            <!-- SIDE CARD -->
+            <!-- =================================================
+                 SIDE CARD
+            ================================================== -->
 
             <aside class="project-side-card">
 
@@ -553,6 +573,8 @@
     <footer class="footer">
 
 
+        <!-- FOOTER ABOUT -->
+
         <div class="footer-about">
 
             <img
@@ -580,6 +602,8 @@
         </div>
 
 
+
+        <!-- QUICK LINKS -->
 
         <div class="footer-links">
 
@@ -621,6 +645,8 @@
 
 
 
+        <!-- CONNECT -->
+
         <div class="footer-links">
 
             <h4>
@@ -659,6 +685,8 @@
 
 
 
+        <!-- FOOTER CONTACT -->
+
         <div class="footer-contact">
 
             <h4>
@@ -687,7 +715,9 @@
 
 
 
-    <!-- COPYRIGHT -->
+    <!-- =====================================================
+         COPYRIGHT
+    ====================================================== -->
 
     <div class="copyright">
 
@@ -695,6 +725,68 @@
         All rights reserved.
 
     </div>
+
+
+
+    <!-- =====================================================
+         DYNAMIC BACK BUTTON SCRIPT
+    ====================================================== -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const backButton =
+                document.getElementById("projectBackButton");
+
+
+            /*
+             * Check how the user arrived at this page.
+             *
+             * Experience link:
+             * projects/cash-cleaner/index.html?from=experience
+             *
+             * All Projects link:
+             * projects/cash-cleaner/index.html
+             */
+
+            const params =
+                new URLSearchParams(window.location.search);
+
+
+            const cameFromExperience =
+                params.get("from") === "experience";
+
+
+            if (cameFromExperience) {
+
+                /*
+                 * User came from the Experience section.
+                 */
+
+                backButton.href =
+                    "../../index.html#experience";
+
+                backButton.innerHTML =
+                    "← Back to Experience";
+
+            } else {
+
+                /*
+                 * User came from All Projects.
+                 */
+
+                backButton.href =
+                    "../index.html";
+
+                backButton.innerHTML =
+                    "← Back to All Projects";
+
+            }
+
+        });
+
+    </script>
 
 
 </body>
