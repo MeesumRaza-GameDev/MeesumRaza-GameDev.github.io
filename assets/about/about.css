@@ -1,0 +1,1635 @@
+/* =========================================================
+   ABOUT PAGE
+   Muhammad Meesum Raza Khan
+========================================================= */
+
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root{
+
+    --bg:#02040B;
+    --bg-main:#070B16;
+
+    --panel:#0D1324;
+    --panel-light:#11182D;
+
+    --text:#FFFFFF;
+    --muted:#AEB5CA;
+
+    --purple:#7C5CFF;
+    --purple-2:#5F7CFF;
+    --purple-3:#A855F7;
+
+    --linkedin:#0A66C2;
+    --whatsapp:#25D366;
+
+    --border:rgba(255,255,255,.08);
+
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+*{
+
+    margin:0;
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:
+
+        radial-gradient(
+            circle at 50% -10%,
+            rgba(124,92,255,.14),
+            transparent 34%
+        ),
+
+        linear-gradient(
+            180deg,
+            #070B16 0%,
+            #02040B 100%
+        );
+
+    color:var(--text);
+
+    font-family:
+        Inter,
+        Arial,
+        sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+
+a{
+
+    color:inherit;
+
+}
+
+
+/* =========================
+   BACKGROUND GLOW
+========================= */
+
+.page-glow{
+
+    position:fixed;
+
+    width:420px;
+    height:420px;
+
+    border-radius:50%;
+
+    filter:blur(110px);
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+
+.glow-one{
+
+    top:120px;
+    left:-260px;
+
+    background:
+        rgba(124,92,255,.10);
+
+}
+
+
+.glow-two{
+
+    right:-260px;
+    bottom:80px;
+
+    background:
+        rgba(95,124,255,.08);
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.about-header{
+
+    width:calc(100% - 32px);
+
+    max-width:1100px;
+
+    margin:16px auto 0;
+
+    padding:16px 26px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    position:relative;
+
+    z-index:5;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(10,13,28,.96),
+            rgba(7,10,22,.88)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    border-radius:16px;
+
+    box-shadow:
+        0 18px 60px rgba(0,0,0,.25);
+
+}
+
+
+/* =========================
+   MINI BRAND
+========================= */
+
+.mini-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+}
+
+
+.mini-brand img{
+
+    width:38px;
+    height:38px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    box-shadow:
+        0 0 18px rgba(124,92,255,.35);
+
+}
+
+
+.mini-brand div{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.mini-brand strong{
+
+    font-size:13px;
+
+    font-weight:900;
+
+}
+
+
+.mini-brand span{
+
+    margin-top:3px;
+
+    color:var(--muted);
+
+    font-size:10px;
+
+    font-weight:600;
+
+}
+
+
+.page-label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#C9C1FF;
+
+    font-size:11px;
+
+    font-weight:800;
+
+}
+
+
+.page-label span{
+
+    width:6px;
+    height:6px;
+
+    border-radius:50%;
+
+    background:var(--purple);
+
+    box-shadow:
+        0 0 14px rgba(124,92,255,.9);
+
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.about-page{
+
+    width:calc(100% - 32px);
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+    position:relative;
+
+    z-index:2;
+
+    padding-bottom:90px;
+
+}
+
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.profile-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:
+        68px 20px 48px;
+
+}
+
+
+/* =========================
+   PROFILE HEADING
+========================= */
+
+.profile-heading{
+
+    max-width:720px;
+
+}
+
+
+.eyebrow{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#9D87FF;
+
+    font-size:10px;
+
+    font-weight:900;
+
+    letter-spacing:2px;
+
+}
+
+
+.profile-heading h1{
+
+    margin-top:12px;
+
+    font-size:42px;
+
+    line-height:1.05;
+
+    font-weight:950;
+
+    letter-spacing:-1.2px;
+
+    color:#FFFFFF;
+
+}
+
+
+.profile-heading h2{
+
+    margin-top:9px;
+
+    font-size:21px;
+
+    line-height:1.2;
+
+    font-weight:850;
+
+    color:var(--purple);
+
+}
+
+
+.profile-intro{
+
+    max-width:600px;
+
+    margin:
+        16px auto 0;
+
+    color:#AEB5CA;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+
+/* =========================================================
+   PROFILE IMAGE
+========================================================= */
+
+.profile-image-wrapper{
+
+    position:relative;
+
+    margin-top:34px;
+
+}
+
+
+.profile-image-glow{
+
+    position:absolute;
+
+    inset:-45px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(124,92,255,.26),
+            rgba(124,92,255,.08) 38%,
+            transparent 70%
+        );
+
+    filter:blur(18px);
+
+    pointer-events:none;
+
+}
+
+
+.profile-image-frame{
+
+    width:230px;
+    height:230px;
+
+    padding:5px;
+
+    position:relative;
+
+    border-radius:50%;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            var(--purple),
+            var(--purple-2),
+            var(--purple-3)
+        );
+
+    box-shadow:
+
+        0 0 0 1px rgba(255,255,255,.12),
+
+        0 0 45px rgba(124,92,255,.30),
+
+        0 25px 65px rgba(0,0,0,.45);
+
+}
+
+
+.profile-image-frame::before{
+
+    content:'';
+
+    position:absolute;
+
+    inset:-9px;
+
+    border-radius:50%;
+
+    border:
+        1px solid rgba(124,92,255,.22);
+
+    pointer-events:none;
+
+}
+
+
+.profile-image-frame img{
+
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:
+        3px solid #080C18;
+
+}
+
+
+/* =========================================================
+   SOCIAL BUTTONS
+========================================================= */
+
+.social-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin-top:24px;
+
+}
+
+
+.social-btn{
+
+    min-width:125px;
+
+    height:43px;
+
+    padding:
+        0 13px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    border-radius:9px;
+
+    text-decoration:none;
+
+    background:
+        rgba(255,255,255,.035);
+
+    border:
+        1px solid rgba(255,255,255,.10);
+
+    color:#E8EBF7;
+
+    font-size:11px;
+
+    font-weight:850;
+
+    transition:
+        transform .22s ease,
+        border-color .22s ease,
+        background .22s ease,
+        box-shadow .22s ease;
+
+}
+
+
+.social-btn:hover{
+
+    transform:translateY(-3px);
+
+    color:#FFFFFF;
+
+}
+
+
+.linkedin-btn:hover{
+
+    border-color:
+        rgba(10,102,194,.65);
+
+    background:
+        rgba(10,102,194,.10);
+
+    box-shadow:
+        0 12px 30px rgba(10,102,194,.12);
+
+}
+
+
+.gmail-btn:hover{
+
+    border-color:
+        rgba(255,255,255,.25);
+
+    background:
+        rgba(255,255,255,.07);
+
+    box-shadow:
+        0 12px 30px rgba(255,255,255,.06);
+
+}
+
+
+.whatsapp-btn:hover{
+
+    border-color:
+        rgba(37,211,102,.55);
+
+    background:
+        rgba(37,211,102,.08);
+
+    box-shadow:
+        0 12px 30px rgba(37,211,102,.12);
+
+}
+
+
+.social-icon{
+
+    width:25px;
+    height:25px;
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:6px;
+
+}
+
+
+.social-icon svg{
+
+    width:18px;
+    height:18px;
+
+    display:block;
+
+    fill:#FFFFFF;
+
+}
+
+
+.linkedin-icon{
+
+    background:
+        #0A66C2;
+
+}
+
+
+.gmail-icon{
+
+    background:
+        rgba(255,255,255,.08);
+
+}
+
+
+.whatsapp-icon{
+
+    background:
+        #25D366;
+
+}
+
+
+.social-arrow{
+
+    color:#8F96AB;
+
+    font-size:13px;
+
+    line-height:1;
+
+    transition:
+        transform .2s ease;
+
+}
+
+
+.social-btn:hover .social-arrow{
+
+    transform:
+        translate(2px,-2px);
+
+    color:#FFFFFF;
+
+}
+
+
+/* =========================================================
+   COMMON SECTION TITLE
+========================================================= */
+
+.education-section,
+.about-description{
+
+    margin-top:18px;
+
+    padding:
+        30px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(17,24,45,.92),
+            rgba(10,15,30,.88)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    border-radius:16px;
+
+    box-shadow:
+        0 20px 55px rgba(0,0,0,.20);
+
+}
+
+
+.section-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:11px;
+
+    margin-bottom:20px;
+
+}
+
+
+.section-dot{
+
+    width:7px;
+    height:7px;
+
+    flex:0 0 7px;
+
+    border-radius:50%;
+
+    background:var(--purple);
+
+    box-shadow:
+        0 0 16px rgba(124,92,255,.85);
+
+}
+
+
+.section-kicker{
+
+    display:block;
+
+    color:#8F96AB;
+
+    font-size:9px;
+
+    font-weight:850;
+
+    letter-spacing:1.3px;
+
+    margin-bottom:3px;
+
+}
+
+
+.section-title h3{
+
+    font-size:21px;
+
+    line-height:1.1;
+
+    font-weight:900;
+
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(124,92,255,.09),
+            rgba(255,255,255,.025)
+        );
+
+    border:
+        1px solid rgba(124,92,255,.20);
+
+    border-radius:12px;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+
+}
+
+
+.education-card:hover{
+
+    transform:translateY(-3px);
+
+    border-color:
+        rgba(124,92,255,.45);
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.25);
+
+}
+
+
+.education-icon{
+
+    width:54px;
+    height:54px;
+
+    flex:0 0 54px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:
+        rgba(124,92,255,.14);
+
+    border:
+        1px solid rgba(124,92,255,.25);
+
+}
+
+
+.education-icon svg{
+
+    width:27px;
+    height:27px;
+
+    fill:#A996FF;
+
+}
+
+
+.education-content{
+
+    flex:1;
+
+    min-width:0;
+
+}
+
+
+.education-top{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+}
+
+
+.education-label{
+
+    color:#9D87FF;
+
+    font-size:9px;
+
+    font-weight:900;
+
+    letter-spacing:1px;
+
+}
+
+
+.education-years{
+
+    flex-shrink:0;
+
+    padding:5px 8px;
+
+    border-radius:6px;
+
+    background:
+        rgba(255,255,255,.045);
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    color:#BFC5D8;
+
+    font-size:9px;
+
+    font-weight:800;
+
+}
+
+
+.education-content h4{
+
+    margin-top:8px;
+
+    font-size:17px;
+
+    font-weight:900;
+
+}
+
+
+.university{
+
+    margin-top:5px;
+
+    color:#D3D8E8;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+
+.education-meta{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:8px;
+
+    color:#8F96AB;
+
+    font-size:10px;
+
+    font-weight:700;
+
+}
+
+
+.meta-separator{
+
+    color:#7C5CFF;
+
+}
+
+
+/* =========================================================
+   ABOUT DESCRIPTION
+========================================================= */
+
+.description-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        220px;
+
+    gap:30px;
+
+    align-items:start;
+
+}
+
+
+.description-main p{
+
+    color:#AEB5CA;
+
+    font-size:12px;
+
+    line-height:1.75;
+
+}
+
+
+.description-main p + p{
+
+    margin-top:13px;
+
+}
+
+
+.description-main strong{
+
+    color:#DCD8FF;
+
+    font-weight:850;
+
+}
+
+
+/* =========================================================
+   LOCATION CARD
+========================================================= */
+
+.location-card{
+
+    min-height:170px;
+
+    padding:22px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(124,92,255,.16),
+            transparent 45%
+        ),
+
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+}
+
+
+.location-icon{
+
+    width:36px;
+    height:36px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:9px;
+
+    background:
+        rgba(124,92,255,.12);
+
+    border:
+        1px solid rgba(124,92,255,.20);
+
+    margin-bottom:15px;
+
+}
+
+
+.location-icon svg{
+
+    width:19px;
+    height:19px;
+
+    fill:#A996FF;
+
+}
+
+
+.location-label{
+
+    color:#8F96AB;
+
+    font-size:8px;
+
+    font-weight:900;
+
+    letter-spacing:1.3px;
+
+}
+
+
+.location-card strong{
+
+    margin-top:5px;
+
+    font-size:19px;
+
+    font-weight:900;
+
+}
+
+
+.location-card > span:last-child{
+
+    margin-top:4px;
+
+    color:#AEB5CA;
+
+    font-size:10px;
+
+}
+
+
+/* =========================================================
+   BACK HOME
+========================================================= */
+
+.back-home{
+
+    position:fixed;
+
+    right:28px;
+    bottom:25px;
+
+    z-index:20;
+
+    height:43px;
+
+    padding:
+        0 16px;
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
+
+    border-radius:9px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #7C5CFF,
+            #5F7CFF
+        );
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    font-size:11px;
+
+    font-weight:850;
+
+    box-shadow:
+        0 15px 40px rgba(124,92,255,.28);
+
+    transition:
+        transform .22s ease,
+        box-shadow .22s ease;
+
+}
+
+
+.back-home:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 20px 50px rgba(124,92,255,.40);
+
+}
+
+
+.back-arrow{
+
+    font-size:16px;
+
+    line-height:1;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.about-footer{
+
+    width:calc(100% - 32px);
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+    padding:
+        18px 0 25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    color:#6F768A;
+
+    font-size:9px;
+
+    border-top:
+        1px solid rgba(255,255,255,.05);
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:800px){
+
+    .about-header{
+
+        width:calc(100% - 24px);
+
+        padding:
+            14px 18px;
+
+    }
+
+
+    .about-page{
+
+        width:calc(100% - 24px);
+
+    }
+
+
+    .profile-section{
+
+        padding-top:52px;
+
+    }
+
+
+    .profile-heading h1{
+
+        font-size:36px;
+
+    }
+
+
+    .description-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .location-card{
+
+        min-height:auto;
+
+        display:grid;
+
+        grid-template-columns:auto 1fr;
+
+        column-gap:12px;
+
+        align-items:center;
+
+    }
+
+
+    .location-icon{
+
+        grid-row:span 2;
+
+        margin:0;
+
+    }
+
+
+    .location-label{
+
+        align-self:end;
+
+    }
+
+
+    .location-card strong{
+
+        margin-top:2px;
+
+        align-self:start;
+
+    }
+
+
+    .location-card > span:last-child{
+
+        grid-column:2;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:600px){
+
+    .about-header{
+
+        margin-top:9px;
+
+    }
+
+
+    .page-label{
+
+        display:none;
+
+    }
+
+
+    .profile-section{
+
+        padding:
+            45px 10px 35px;
+
+    }
+
+
+    .eyebrow{
+
+        font-size:8px;
+
+        letter-spacing:1.5px;
+
+    }
+
+
+    .profile-heading h1{
+
+        font-size:29px;
+
+        letter-spacing:-.7px;
+
+        line-height:1.1;
+
+    }
+
+
+    .profile-heading h2{
+
+        font-size:18px;
+
+    }
+
+
+    .profile-intro{
+
+        font-size:12px;
+
+        line-height:1.65;
+
+    }
+
+
+    .profile-image-wrapper{
+
+        margin-top:28px;
+
+    }
+
+
+    .profile-image-frame{
+
+        width:185px;
+        height:185px;
+
+    }
+
+
+    .social-buttons{
+
+        width:100%;
+
+        gap:7px;
+
+    }
+
+
+    .social-btn{
+
+        min-width:0;
+
+        flex:1;
+
+        height:41px;
+
+        padding:
+            0 8px;
+
+        font-size:10px;
+
+        gap:5px;
+
+    }
+
+
+    .social-icon{
+
+        width:22px;
+        height:22px;
+
+    }
+
+
+    .social-icon svg{
+
+        width:15px;
+        height:15px;
+
+    }
+
+
+    .social-arrow{
+
+        display:none;
+
+    }
+
+
+    .education-section,
+    .about-description{
+
+        padding:21px 17px;
+
+        border-radius:13px;
+
+    }
+
+
+    .education-card{
+
+        align-items:flex-start;
+
+        gap:12px;
+
+        padding:15px;
+
+    }
+
+
+    .education-icon{
+
+        width:43px;
+        height:43px;
+
+        flex-basis:43px;
+
+    }
+
+
+    .education-icon svg{
+
+        width:22px;
+        height:22px;
+
+    }
+
+
+    .education-top{
+
+        align-items:flex-start;
+
+        flex-direction:column;
+
+        gap:6px;
+
+    }
+
+
+    .education-years{
+
+        order:-1;
+
+    }
+
+
+    .education-content h4{
+
+        font-size:14px;
+
+    }
+
+
+    .university{
+
+        font-size:10px;
+
+        line-height:1.5;
+
+    }
+
+
+    .education-meta{
+
+        font-size:9px;
+
+    }
+
+
+    .section-title h3{
+
+        font-size:19px;
+
+    }
+
+
+    .description-main p{
+
+        font-size:11px;
+
+        line-height:1.7;
+
+    }
+
+
+    .location-card{
+
+        padding:17px;
+
+    }
+
+
+    .back-home{
+
+        right:16px;
+
+        bottom:17px;
+
+        height:40px;
+
+        padding:
+            0 13px;
+
+        font-size:10px;
+
+    }
+
+
+    .about-footer{
+
+        width:calc(100% - 24px);
+
+        flex-direction:column;
+
+        align-items:center;
+
+        text-align:center;
+
+        padding-bottom:80px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media(max-width:400px){
+
+    .mini-brand strong{
+
+        font-size:11px;
+
+    }
+
+
+    .mini-brand span{
+
+        font-size:9px;
+
+    }
+
+
+    .mini-brand img{
+
+        width:34px;
+        height:34px;
+
+    }
+
+
+    .profile-heading h1{
+
+        font-size:26px;
+
+    }
+
+
+    .profile-image-frame{
+
+        width:165px;
+        height:165px;
+
+    }
+
+
+    .social-btn{
+
+        font-size:9px;
+
+    }
+
+
+    .social-icon{
+
+        display:none;
+
+    }
+
+}
