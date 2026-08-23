@@ -2,234 +2,415 @@
    RETRO VIDEO STORE PROJECT PAGE
    ========================= */
 
-   .project-page{
-    width:calc(100% - 32px);
-    max-width:1280px;
-    margin:0 auto;
-    border-left:1px solid rgba(255,255,255,.06);
-    border-right:1px solid rgba(255,255,255,.06);
+   .project-page {
+    width: calc(100% - 32px);
+    max-width: 1280px;
+    margin: 0 auto;
+
+    border-left: 1px solid rgba(255, 255, 255, .06);
+    border-right: 1px solid rgba(255, 255, 255, .06);
+
     background:
-        radial-gradient(circle at 76% 8%, rgba(124,92,255,.12), transparent 28%),
-        linear-gradient(180deg, #070b16, #050812);
+        radial-gradient(
+            circle at 76% 8%,
+            rgba(124, 92, 255, .12),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #070b16,
+            #050812
+        );
 }
+
 
 /* =========================
    PROJECT HERO
    ========================= */
 
-.project-hero-detail{
-    position:relative;
-    min-height:610px;
-    padding:58px 52px 72px;
-    overflow:hidden;
-    display:grid;
-    grid-template-columns:1fr 1.05fr;
-    align-items:center;
-    gap:48px;
+.project-hero-detail {
+    position: relative;
+
+    min-height: 610px;
+
+    padding: 58px 52px 72px;
+
+    overflow: hidden;
+
+    display: grid;
+
+    /*
+       Left side = project information
+       Right side = square project cover
+    */
+    grid-template-columns: 1fr 500px;
+
+    align-items: center;
+
+    gap: 55px;
 }
 
-.project-hero-detail::before{
-    content:'';
-    position:absolute;
-    width:520px;
-    height:520px;
-    right:-140px;
-    top:-190px;
-    background:radial-gradient(circle, rgba(124,92,255,.20), transparent 68%);
-    pointer-events:none;
+
+/* Purple background glow */
+
+.project-hero-detail::before {
+    content: '';
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    right: -140px;
+    top: -190px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(124, 92, 255, .20),
+            transparent 68%
+        );
+
+    pointer-events: none;
 }
 
-.back-project{
-    position:absolute;
-    left:52px;
-    top:28px;
-    z-index:3;
 
-    color:#9d87ff;
-    text-decoration:none;
-    font-size:12px;
-    font-weight:800;
+/* =========================
+   BACK BUTTON
+   ========================= */
 
-    transition:.2s ease;
+.back-project {
+    position: absolute;
+
+    left: 52px;
+    top: 28px;
+
+    z-index: 3;
+
+    color: #9d87ff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    transition: .2s ease;
 }
 
-.back-project:hover{
-    color:#ffffff;
-    transform:translateX(-3px);
+.back-project:hover {
+    color: #ffffff;
+
+    transform: translateX(-3px);
 }
 
-.project-title-wrap{
-    position:relative;
-    z-index:2;
-    padding-top:30px;
+
+/* =========================
+   PROJECT INFORMATION
+   ========================= */
+
+.project-title-wrap {
+    position: relative;
+
+    z-index: 2;
+
+    padding-top: 30px;
 }
 
-.project-kicker{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
 
-    color:#a995ff;
-    font-size:12px;
-    font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:.7px;
+/* Small project category */
+
+.project-kicker {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #a995ff;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: .7px;
 }
 
-.project-kicker::before{
-    content:'';
-    width:7px;
-    height:7px;
-    border-radius:50%;
-    background:var(--purple);
-    box-shadow:0 0 16px rgba(124,92,255,.9);
-}
+.project-kicker::before {
+    content: '';
 
-.project-title-wrap h1{
-    max-width:620px;
-    margin-top:15px;
+    width: 7px;
+    height: 7px;
 
-    font-size:58px;
-    line-height:1.02;
-    letter-spacing:-2px;
-    font-weight:950;
+    border-radius: 50%;
 
-    color:#ffffff;
-}
-
-.project-lead{
-    max-width:530px;
-    margin-top:20px;
-
-    color:#bfc7db;
-    font-size:15px;
-    line-height:1.65;
-}
-
-.project-meta{
-    display:flex;
-    flex-wrap:wrap;
-    gap:9px;
-    margin-top:22px;
-}
-
-.project-meta span{
-    padding:7px 11px;
-    border:1px solid rgba(124,92,255,.30);
-    border-radius:8px;
-    background:rgba(124,92,255,.07);
-
-    color:#c7bdff;
-    font-size:11px;
-    font-weight:800;
-}
-
-.playstore-btn{
-    width:max-content;
-    min-width:310px;
-    margin-top:30px;
-    padding:12px 17px;
-
-    display:flex;
-    align-items:center;
-    gap:13px;
-
-    color:#ffffff;
-    text-decoration:none;
-
-    border:1px solid rgba(255,255,255,.14);
-    border-radius:12px;
-
-    background:linear-gradient(
-        90deg,
-        rgba(124,92,255,.95),
-        rgba(95,124,255,.95)
-    );
+    background: var(--purple);
 
     box-shadow:
-        0 18px 45px rgba(124,92,255,.25),
-        inset 0 1px 0 rgba(255,255,255,.18);
-
-    transition:.25s ease;
+        0 0 16px rgba(124, 92, 255, .9);
 }
 
-.playstore-btn:hover{
-    transform:translateY(-4px);
+
+/* =========================
+   PROJECT TITLE
+   ========================= */
+
+.project-title-wrap h1 {
+    max-width: 620px;
+
+    margin-top: 15px;
+
+    color: #ffffff;
+
+    font-size: 58px;
+
+    line-height: 1.02;
+
+    letter-spacing: -2px;
+
+    font-weight: 950;
+}
+
+
+/* =========================
+   PROJECT DESCRIPTION
+   ========================= */
+
+.project-lead {
+    max-width: 530px;
+
+    margin-top: 20px;
+
+    color: #bfc7db;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================
+   PROJECT META TAGS
+   ========================= */
+
+.project-meta {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-top: 22px;
+}
+
+.project-meta span {
+    padding: 7px 11px;
+
+    border: 1px solid rgba(124, 92, 255, .30);
+
+    border-radius: 8px;
+
+    background: rgba(124, 92, 255, .07);
+
+    color: #c7bdff;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+/* =========================
+   PLAY STORE BUTTON
+   ========================= */
+
+.playstore-btn {
+    width: max-content;
+
+    min-width: 310px;
+
+    margin-top: 30px;
+
+    padding: 12px 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border: 1px solid rgba(255, 255, 255, .14);
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(124, 92, 255, .95),
+            rgba(95, 124, 255, .95)
+        );
+
     box-shadow:
-        0 25px 60px rgba(124,92,255,.38),
-        inset 0 1px 0 rgba(255,255,255,.24);
+        0 18px 45px rgba(124, 92, 255, .25),
+        inset 0 1px 0 rgba(255, 255, 255, .18);
+
+    transition: .25s ease;
 }
 
-.playstore-icon{
-    width:42px;
-    height:42px;
-    flex:0 0 42px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:11px;
-    background:rgba(255,255,255,.15);
-    font-size:15px;
-}
-
-.playstore-btn span:nth-child(2){
-    display:flex;
-    flex-direction:column;
-    line-height:1.25;
-    flex:1;
-}
-
-.playstore-btn small{
-    color:rgba(255,255,255,.75);
-    font-size:9px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:.6px;
-}
-
-.playstore-btn span:nth-child(2){
-    font-size:14px;
-    font-weight:900;
-}
-
-.playstore-btn b{
-    font-size:19px;
-}
-
-/* Large cover */
-.project-cover-large{
-    position:relative;
-    z-index:2;
-
-    border-radius:18px;
-    overflow:hidden;
-
-    border:1px solid rgba(255,255,255,.10);
-    background:#0d1324;
+.playstore-btn:hover {
+    transform: translateY(-4px);
 
     box-shadow:
-        0 30px 80px rgba(0,0,0,.42),
-        0 0 70px rgba(124,92,255,.12);
-
-    transform:rotate(1deg);
-    transition:.35s ease;
+        0 25px 60px rgba(124, 92, 255, .38),
+        inset 0 1px 0 rgba(255, 255, 255, .24);
 }
 
-.project-cover-large:hover{
-    transform:rotate(0deg) translateY(-5px);
-    border-color:rgba(124,92,255,.45);
+
+/* Play Store icon */
+
+.playstore-icon {
+    width: 42px;
+    height: 42px;
+
+    flex: 0 0 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: rgba(255, 255, 255, .15);
+
+    font-size: 15px;
+}
+
+
+/* Button text container */
+
+.playstore-btn span:nth-child(2) {
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1.25;
+
+    flex: 1;
+
+    font-size: 14px;
+
+    font-weight: 900;
+}
+
+
+/* Available on */
+
+.playstore-btn small {
+    color: rgba(255, 255, 255, .75);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .6px;
+}
+
+
+/* Arrow */
+
+.playstore-btn b {
+    font-size: 19px;
+}
+
+
+/* =========================
+   PROJECT COVER
+   GOOGLE PLAY INSPIRED
+   SQUARE DESIGN
+   ========================= */
+
+.project-cover-large {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(100%, 500px);
+
+    /*
+       Square cover instead of 16:9
+    */
+    aspect-ratio: 1 / 1;
+
+    justify-self: end;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, .12);
+
+    background: #0d1324;
+
     box-shadow:
-        0 38px 90px rgba(0,0,0,.50),
-        0 0 85px rgba(124,92,255,.20);
+        0 30px 80px rgba(0, 0, 0, .48),
+        0 0 70px rgba(124, 92, 255, .16);
+
+    /*
+       No rotation.
+       Cleaner and more professional.
+    */
+    transform: translateY(0);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
 }
 
-.project-cover-large img{
-    width:100%;
-    display:block;
-    aspect-ratio:16 / 9;
-    object-fit:cover;
+
+/* Cover hover */
+
+.project-cover-large:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(124, 92, 255, .45);
+
+    box-shadow:
+        0 38px 90px rgba(0, 0, 0, .55),
+        0 0 90px rgba(124, 92, 255, .24);
+}
+
+
+/* Cover image */
+
+.project-cover-large img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    /*
+       Square image
+    */
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform .4s ease;
+}
+
+
+/* Very subtle image zoom */
+
+.project-cover-large:hover img {
+    transform: scale(1.025);
 }
 
 
@@ -238,38 +419,54 @@
    ========================= */
 
 .project-gallery-section,
-.project-description-section{
-    padding:56px 52px 0;
+.project-description-section {
+    padding: 56px 52px 0;
 }
 
-.project-section-heading{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
-    margin-bottom:20px;
+
+.project-section-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    margin-bottom: 20px;
 }
 
-.project-section-heading h2{
-    font-size:24px;
-    line-height:1.2;
-    font-weight:900;
+
+.project-section-heading h2 {
+    font-size: 24px;
+
+    line-height: 1.2;
+
+    font-weight: 900;
 }
 
-.project-section-heading h2 span{
-    display:inline-block;
-    width:7px;
-    height:7px;
-    margin-right:9px;
 
-    border-radius:50%;
-    background:var(--purple);
-    box-shadow:0 0 18px rgba(124,92,255,.8);
+.project-section-heading h2 span {
+    display: inline-block;
+
+    width: 7px;
+    height: 7px;
+
+    margin-right: 9px;
+
+    border-radius: 50%;
+
+    background: var(--purple);
+
+    box-shadow:
+        0 0 18px rgba(124, 92, 255, .8);
 }
 
-.project-section-heading p{
-    margin-top:5px;
-    color:#9fa6bd;
-    font-size:12px;
+
+.project-section-heading p {
+    margin-top: 5px;
+
+    color: #9fa6bd;
+
+    font-size: 12px;
 }
 
 
@@ -277,216 +474,377 @@
    IMAGE GALLERY
    ========================= */
 
-.project-gallery{
-    display:grid;
-    grid-template-columns:1.45fr 1fr;
-    gap:16px;
-}
+.project-gallery {
+    display: grid;
 
-.project-gallery figure{
-    margin:0;
-    overflow:hidden;
+    grid-template-columns: 1.45fr 1fr;
 
-    border-radius:13px;
-    border:1px solid rgba(255,255,255,.08);
-    background:#0d1324;
-
-    box-shadow:0 18px 50px rgba(0,0,0,.22);
-}
-
-.project-gallery figure img{
-    width:100%;
-    height:100%;
-    min-height:230px;
-    display:block;
-    object-fit:cover;
-
-    transition:.35s ease;
-}
-
-.project-gallery figure:hover img{
-    transform:scale(1.025);
-}
-
-.gallery-main{
-    grid-row:span 2;
+    gap: 16px;
 }
 
 
-/* =========================
-   DESCRIPTION
-   ========================= */
+.project-gallery figure {
+    margin: 0;
 
-.project-description-section{
-    padding-bottom:72px;
+    overflow: hidden;
 
-    display:grid;
-    grid-template-columns:1fr 330px;
-    gap:42px;
-    align-items:start;
+    border-radius: 13px;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    background: #0d1324;
+
+    box-shadow:
+        0 18px 50px rgba(0, 0, 0, .22);
 }
 
-.project-description .project-section-heading{
-    margin-bottom:24px;
+
+.project-gallery figure img {
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 230px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: .35s ease;
 }
 
-.project-description > p{
-    max-width:780px;
-    margin-bottom:17px;
 
-    color:#b8c0d4;
-    font-size:14px;
-    line-height:1.75;
+.project-gallery figure:hover img {
+    transform: scale(1.025);
 }
 
-.project-side-card{
-    padding:24px;
 
-    display:flex;
-    flex-direction:column;
-    gap:7px;
-
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:14px;
-
-    background:rgba(15,21,39,.82);
-    box-shadow:0 20px 55px rgba(0,0,0,.25);
-}
-
-.side-label{
-    margin-top:8px;
-    color:#858da5;
-    font-size:10px;
-    font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:.7px;
-}
-
-.project-side-card strong{
-    color:#ffffff;
-    font-size:14px;
-    font-weight:900;
-}
-
-.project-side-card .primary-btn{
-    width:100%;
-    margin-top:18px;
-    text-align:center;
+.gallery-main {
+    grid-row: span 2;
 }
 
 
 /* =========================
-   RESPONSIVE
+   PROJECT DESCRIPTION
    ========================= */
 
-@media(max-width:1100px){
+.project-description-section {
+    padding-bottom: 72px;
 
-    .project-page{
-        width:calc(100% - 24px);
+    display: grid;
+
+    grid-template-columns: 1fr 330px;
+
+    gap: 42px;
+
+    align-items: start;
+}
+
+
+.project-description .project-section-heading {
+    margin-bottom: 24px;
+}
+
+
+.project-description > p {
+    max-width: 780px;
+
+    margin-bottom: 17px;
+
+    color: #b8c0d4;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================
+   PROJECT SIDE CARD
+   ========================= */
+
+.project-side-card {
+    padding: 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    border-radius: 14px;
+
+    background: rgba(15, 21, 39, .82);
+
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, .25);
+}
+
+
+.side-label {
+    margin-top: 8px;
+
+    color: #858da5;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: .7px;
+}
+
+
+.project-side-card strong {
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 900;
+}
+
+
+.project-side-card .primary-btn {
+    width: 100%;
+
+    margin-top: 18px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   LARGE TABLET
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .project-page {
+        width: calc(100% - 24px);
     }
 
-    .project-hero-detail{
-        padding-left:34px;
-        padding-right:34px;
-        grid-template-columns:1fr;
+
+    .project-hero-detail {
+        padding-left: 34px;
+        padding-right: 34px;
+
+        /*
+           Stack content and cover
+        */
+        grid-template-columns: 1fr;
     }
 
-    .back-project{
-        left:34px;
+
+    .back-project {
+        left: 34px;
     }
 
-    .project-title-wrap h1{
-        max-width:760px;
-        font-size:52px;
+
+    .project-title-wrap h1 {
+        max-width: 760px;
+
+        font-size: 52px;
     }
 
-    .project-cover-large{
-        max-width:760px;
-        width:100%;
-        justify-self:center;
+
+    .project-cover-large {
+        width: min(100%, 500px);
+
+        justify-self: center;
     }
+
 
     .project-gallery-section,
-    .project-description-section{
-        padding-left:34px;
-        padding-right:34px;
+    .project-description-section {
+        padding-left: 34px;
+        padding-right: 34px;
     }
 }
 
-@media(max-width:900px){
 
-    .project-hero-detail{
-        min-height:auto;
-        padding-top:75px;
-        gap:32px;
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .project-hero-detail {
+        min-height: auto;
+
+        padding-top: 75px;
+
+        gap: 40px;
     }
 
-    .project-title-wrap{
-        padding-top:15px;
+
+    .project-title-wrap {
+        padding-top: 15px;
     }
 
-    .project-title-wrap h1{
-        font-size:44px;
-        letter-spacing:-1.3px;
+
+    .project-title-wrap h1 {
+        font-size: 44px;
+
+        letter-spacing: -1.3px;
     }
 
-    .project-description-section{
-        grid-template-columns:1fr;
+
+    /*
+       Keep square cover on tablet
+    */
+
+    .project-cover-large {
+        width: min(100%, 460px);
+
+        aspect-ratio: 1 / 1;
     }
 
-    .project-side-card{
-        max-width:520px;
+
+    .project-description-section {
+        grid-template-columns: 1fr;
+    }
+
+
+    .project-side-card {
+        max-width: 520px;
     }
 }
 
-@media(max-width:600px){
 
-    .project-page{
-        width:calc(100% - 16px);
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .project-page {
+        width: calc(100% - 16px);
     }
 
-    .project-hero-detail{
-        padding:70px 20px 50px;
+
+    .project-hero-detail {
+        padding: 70px 20px 50px;
+
+        gap: 32px;
     }
 
-    .back-project{
-        left:20px;
+
+    .back-project {
+        left: 20px;
     }
 
-    .project-title-wrap h1{
-        font-size:35px;
-        letter-spacing:-.9px;
+
+    .project-title-wrap h1 {
+        font-size: 35px;
+
+        letter-spacing: -.9px;
     }
 
-    .project-lead{
-        font-size:14px;
+
+    .project-lead {
+        font-size: 14px;
     }
 
-    .playstore-btn{
-        width:100%;
-        min-width:0;
+
+    /*
+       Full-width Play Store button
+    */
+
+    .playstore-btn {
+        width: 100%;
+
+        min-width: 0;
     }
+
+
+    /*
+       Square cover on mobile
+    */
+
+    .project-cover-large {
+        width: 100%;
+
+        max-width: 390px;
+
+        aspect-ratio: 1 / 1;
+
+        justify-self: center;
+
+        border-radius: 20px;
+    }
+
 
     .project-gallery-section,
-    .project-description-section{
-        padding-left:20px;
-        padding-right:20px;
+    .project-description-section {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .project-gallery{
-        grid-template-columns:1fr;
+
+    /*
+       Single-column gallery
+    */
+
+    .project-gallery {
+        grid-template-columns: 1fr;
     }
 
-    .gallery-main{
-        grid-row:auto;
+
+    .gallery-main {
+        grid-row: auto;
     }
 
-    .project-gallery figure img{
-        min-height:0;
-        aspect-ratio:16 / 9;
+
+    .project-gallery figure img {
+        min-height: 0;
+
+        aspect-ratio: 16 / 9;
     }
 
-    .project-section-heading h2{
-        font-size:21px;
+
+    .project-section-heading h2 {
+        font-size: 21px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+   ========================= */
+
+@media (max-width: 400px) {
+
+    .project-title-wrap h1 {
+        font-size: 31px;
+    }
+
+
+    .project-cover-large {
+        max-width: 330px;
+
+        border-radius: 18px;
+    }
+
+
+    .project-meta span {
+        font-size: 10px;
+
+        padding: 6px 9px;
+    }
+
+
+    .playstore-btn {
+        padding: 11px 13px;
+    }
+
+
+    .playstore-icon {
+        width: 38px;
+        height: 38px;
+
+        flex-basis: 38px;
     }
 }
