@@ -22,7 +22,6 @@
 }
 
 
-
 /* =========================
    GLOBAL RESET
 ========================= */
@@ -140,11 +139,8 @@ a{
 
 .brand-text strong{
     font-size:15px;
-
     font-weight:900;
-
     color:#ffffff;
-
     letter-spacing:.1px;
 }
 
@@ -153,7 +149,6 @@ a{
     margin-top:4px;
 
     font-size:11px;
-
     font-weight:600;
 
     color:#AEB5CA;
@@ -244,12 +239,6 @@ a{
 
 .nav-links a:hover{
     color:var(--purple);
-
-    background:transparent;
-
-    border:none;
-
-    box-shadow:none;
 }
 
 
@@ -393,11 +382,6 @@ a{
 
     border-right:
         1px solid rgba(255,255,255,.06);
-
-    border-top:0;
-    border-bottom:0;
-
-    border-radius:0;
 
     background:
 
@@ -571,12 +555,6 @@ a{
 
     pointer-events:none;
 
-    border:0;
-
-    border-radius:0;
-
-    box-shadow:none;
-
     filter:
         saturate(1.05)
         contrast(1.02);
@@ -695,8 +673,9 @@ a{
 }
 
 
+
 /* =========================
-   VIEW ALL PROJECTS BUTTON
+   VIEW ALL
 ========================= */
 
 .view-all{
@@ -730,27 +709,16 @@ a{
     border:
         1px solid rgba(124,92,255,.38);
 
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.06),
-        0 8px 24px rgba(0,0,0,.18);
-
-    transition:
-        transform .22s ease,
-        color .22s ease,
-        border-color .22s ease,
-        background .22s ease,
-        box-shadow .22s ease;
+    transition:.22s ease;
 }
 
 
 .view-all:hover{
-
     color:#ffffff;
 
     transform:translateY(-2px);
 
-    border-color:
-        rgba(124,92,255,.75);
+    border-color:rgba(124,92,255,.75);
 
     background:
         linear-gradient(
@@ -758,41 +726,19 @@ a{
             rgba(124,92,255,.24),
             rgba(95,124,255,.14)
         );
-
-    box-shadow:
-        0 10px 30px rgba(124,92,255,.20),
-        inset 0 1px 0 rgba(255,255,255,.10);
-}
-
-
-.view-all:active{
-
-    transform:translateY(0);
-}
-
-
-.view-all:focus-visible{
-
-    outline:
-        2px solid var(--purple);
-
-    outline-offset:3px;
 }
 
 
 .view-all span{
-
     font-size:15px;
 
     line-height:1;
 
-    transition:
-        transform .2s ease;
+    transition:.2s ease;
 }
 
 
 .view-all:hover span{
-
     transform:translateX(3px);
 }
 
@@ -968,7 +914,6 @@ a{
 
 .project-card-link:hover
 .project-media::after{
-
     opacity:1;
 }
 
@@ -976,7 +921,6 @@ a{
 .project-card-link:hover
 .project-media
 .project-img{
-
     transform:scale(1.05);
 
     filter:saturate(1.08);
@@ -985,7 +929,6 @@ a{
 
 .project-card-link:hover
 .project-view{
-
     opacity:1;
 
     transform:translateY(0);
@@ -998,13 +941,11 @@ a{
 ========================= */
 
 .project-info{
-
     padding:14px;
 }
 
 
 .project-info h4{
-
     font-size:14px;
 
     margin-bottom:5px;
@@ -1016,7 +957,6 @@ a{
 
 
 .project-info span{
-
     color:#9D87FF;
 
     font-size:11px;
@@ -1026,7 +966,6 @@ a{
 
 
 .project-info p{
-
     color:var(--muted);
 
     font-size:11px;
@@ -1040,7 +979,6 @@ a{
 
 
 .project-icons{
-
     display:flex;
 
     gap:10px;
@@ -1054,9 +992,9 @@ a{
 
 
 
-/* =========================
+/* =========================================================
    EXPERIENCE + SKILLS
-========================= */
+========================================================= */
 
 .info-section{
 
@@ -1072,10 +1010,14 @@ a{
 
 
 .section-header.small{
-
     margin-bottom:16px;
 }
 
+
+
+/* =========================
+   TIMELINE
+========================= */
 
 .timeline{
 
@@ -1116,13 +1058,18 @@ a{
 }
 
 
+.timeline-item:last-child{
+    margin-bottom:0;
+}
+
+
 .timeline-dot{
 
     position:absolute;
 
     left:-25px;
 
-    top:14px;
+    top:18px;
 
     width:13px;
     height:13px;
@@ -1133,72 +1080,319 @@ a{
 
     box-shadow:
         0 0 18px rgba(124,92,255,.9);
+
+    z-index:2;
 }
 
+
+
+/* =========================
+   EXPERIENCE CARD
+========================= */
 
 .timeline-content{
 
     background:
-        rgba(15,21,39,.82);
+        linear-gradient(
+            145deg,
+            rgba(17,24,45,.92),
+            rgba(12,18,35,.88)
+        );
 
     border:
-        1px solid var(--border);
+        1px solid rgba(255,255,255,.08);
 
-    border-radius:10px;
+    border-radius:12px;
 
-    padding:16px;
+    padding:18px;
 
     position:relative;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
 }
 
 
-.timeline-content h4{
+.timeline-content:hover{
 
-    font-size:14px;
+    transform:translateY(-3px);
+
+    border-color:
+        rgba(124,92,255,.38);
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.25);
+}
+
+
+
+/* =========================
+   EXPERIENCE HEADING
+========================= */
+
+.timeline-heading{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    padding-right:0;
+}
+
+
+.timeline-heading h4{
+
+    font-size:15px;
 
     font-weight:900;
+
+    line-height:1.25;
 }
 
 
-.timeline-content span{
+.timeline-heading small{
 
-    display:block;
+    flex-shrink:0;
 
-    margin-top:4px;
+    color:#B9BFD1;
+
+    font-size:10px;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+    padding-top:2px;
+}
+
+
+
+/* =========================
+   COMPANY BUTTON
+========================= */
+
+.company-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    width:max-content;
+
+    margin-top:7px;
+
+    padding:5px 9px;
+
+    border-radius:6px;
+
+    color:#C8BEFF;
+
+    background:
+        rgba(124,92,255,.09);
+
+    border:
+        1px solid rgba(124,92,255,.28);
+
+    text-decoration:none;
+
+    font-size:10px;
+
+    font-weight:800;
+
+    line-height:1;
+
+    transition:
+        color .2s ease,
+        background .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+}
+
+
+.company-link span{
 
     color:#9D87FF;
 
     font-size:11px;
 
-    font-weight:700;
+    transition:
+        transform .2s ease;
 }
 
 
-.timeline-content small{
+.company-link:hover{
 
-    position:absolute;
+    color:#ffffff;
 
-    right:16px;
+    background:
+        rgba(124,92,255,.18);
 
-    top:16px;
+    border-color:
+        rgba(124,92,255,.62);
 
-    color:#B9BFD1;
-
-    font-size:10px;
+    transform:translateY(-1px);
 }
 
 
-.timeline-content p{
+.company-link:hover span{
+    transform:translate(2px,-2px);
+}
+
+
+
+/* =========================
+   EXPERIENCE DESCRIPTION
+========================= */
+
+.timeline-content > p{
 
     color:var(--muted);
 
-    line-height:1.5;
+    line-height:1.55;
 
-    margin-top:12px;
+    margin-top:14px;
 
     font-size:11px;
 
-    max-width:90%;
+    max-width:96%;
+}
+
+
+
+/* =========================
+   PROJECT BUTTON INSIDE
+   EXPERIENCE
+========================= */
+
+.project-experience-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:4px;
+
+    margin:0 2px;
+
+    padding:2px 6px;
+
+    border-radius:5px;
+
+    color:#DCD8FF;
+
+    background:
+        rgba(124,92,255,.12);
+
+    border:
+        1px solid rgba(124,92,255,.32);
+
+    text-decoration:none;
+
+    font-size:10px;
+
+    font-weight:850;
+
+    line-height:1.3;
+
+    white-space:nowrap;
+
+    transition:.2s ease;
+}
+
+
+.project-experience-link span{
+
+    color:#9D87FF;
+
+    font-size:10px;
+
+    transition:.2s ease;
+}
+
+
+.project-experience-link:hover{
+
+    color:#ffffff;
+
+    background:
+        rgba(124,92,255,.22);
+
+    border-color:
+        rgba(124,92,255,.68);
+
+    box-shadow:
+        0 5px 18px rgba(124,92,255,.15);
+}
+
+
+.project-experience-link:hover span{
+
+    transform:translate(2px,-2px);
+}
+
+
+
+/* =========================
+   EXPERIENCE TAGS
+========================= */
+
+.experience-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:6px;
+
+    margin-top:14px;
+}
+
+
+.experience-tags span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:5px 8px;
+
+    border-radius:6px;
+
+    color:#AEB5CA;
+
+    background:
+        rgba(255,255,255,.035);
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    font-size:9px;
+
+    font-weight:700;
+
+    line-height:1;
+
+    transition:.2s ease;
+}
+
+
+.experience-tags span:hover{
+
+    color:#DCD8FF;
+
+    border-color:
+        rgba(124,92,255,.28);
+
+    background:
+        rgba(124,92,255,.07);
 }
 
 
@@ -1208,7 +1402,6 @@ a{
 ========================= */
 
 .skill{
-
     margin-bottom:15px;
 }
 
@@ -1452,14 +1645,6 @@ a{
 .linkedin-connect-btn:hover{
 
     transform:translateY(-3px);
-
-    background:
-        linear-gradient(
-            90deg,
-            #8B6CFF 0%,
-            #A855F7 55%,
-            #6C86FF 100%
-        );
 
     box-shadow:
 
@@ -1709,8 +1894,6 @@ a{
     }
 
 
-    /* 2 cards per row on smaller desktop/tablet */
-
     .projects-grid{
 
         grid-template-columns:
@@ -1912,6 +2095,12 @@ a{
     }
 
 
+    .timeline-heading{
+
+        gap:15px;
+    }
+
+
     .linkedin-connect-btn{
 
         height:54px;
@@ -1952,19 +2141,39 @@ a{
     }
 
 
-    .timeline-content small{
+    .timeline-heading{
 
-        position:static;
+        flex-direction:column;
 
-        display:block;
-
-        margin-top:7px;
+        gap:7px;
     }
 
 
-    .timeline-content p{
+    .timeline-heading small{
+
+        white-space:normal;
+
+        padding-top:0;
+    }
+
+
+    .timeline-content > p{
 
         max-width:100%;
+    }
+
+
+    .experience-tags{
+
+        gap:5px;
+    }
+
+
+    .experience-tags span{
+
+        font-size:8px;
+
+        padding:5px 7px;
     }
 
 
@@ -2199,6 +2408,53 @@ a{
 
         padding-left:20px;
         padding-right:20px;
+    }
+
+
+    .timeline{
+
+        padding-left:21px;
+    }
+
+
+    .timeline::before{
+
+        left:5px;
+    }
+
+
+    .timeline-dot{
+
+        left:-21px;
+
+        width:11px;
+        height:11px;
+    }
+
+
+    .timeline-content{
+
+        padding:15px;
+    }
+
+
+    .timeline-heading h4{
+
+        font-size:14px;
+    }
+
+
+    .company-link{
+
+        font-size:9px;
+
+        padding:5px 8px;
+    }
+
+
+    .project-experience-link{
+
+        white-space:normal;
     }
 
 }
